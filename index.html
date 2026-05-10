@@ -431,14 +431,14 @@
         <a href="https://www.didecor.ru">www.didecor.ru</a>
       </div>
     </div>
-    <!--<div class="search-wrap">
+    <div class="search-wrap">
       <input
         type="text"
         class="search-input"
         placeholder="Поиск по названию..."
-        oninput="search(this.value)"
+        oninput="searchItems(this.value)"
       />
-    </div>-->
+    </div>
     <div class="filter-wrap" id="filterWrap">
       <button class="filter-btn active" onclick="filter('all', this)">
         Всё</button
@@ -3774,7 +3774,7 @@
         applyFilters();
       }
 
-      function search(q) {
+      function searchItems(q) {
         searchQ = q.toLowerCase().trim();
         applyFilters();
       }
