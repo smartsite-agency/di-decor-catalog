@@ -552,186 +552,6 @@
       .back-to-top:hover {
         background: #252547;
       }
-
-      /* === EXAMPLES BUTTON === */
-      /* ЗМІНА: кнопка "Примеры" — окремий стиль, відрізняється від btn-more */
-      .btn-examples {
-        display: inline-flex;
-        align-items: center;
-        gap: 4px;
-        margin-top: 6px;
-        margin-left: 6px;
-        font-size: 11px;
-        padding: 4px 10px;
-        border-radius: 100px;
-        border: 0.5px solid rgba(201, 168, 76, 0.4);
-        background: transparent;
-        color: var(--gold);
-        cursor: pointer;
-        font-family: inherit;
-        transition: all 0.15s;
-      }
-      .btn-examples:hover {
-        background: rgba(201, 168, 76, 0.1);
-        border-color: var(--gold);
-      }
-
-      /* === GALLERY POPUP === */
-      /* ЗМІНА: прихований блок з фото прикладів — зберігається в картці */
-      .card-examples {
-        display: none;
-      }
-
-      .gallery-overlay {
-        position: fixed;
-        inset: 0;
-        background: rgba(0, 0, 0, 0.85);
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        z-index: 1100;
-        padding: 1rem;
-        opacity: 0;
-        visibility: hidden;
-        transition: opacity 0.22s ease, visibility 0.22s ease;
-      }
-      .gallery-overlay.open {
-        opacity: 1;
-        visibility: visible;
-      }
-      .gallery-box {
-        background: var(--white);
-        border-radius: 16px;
-        width: 100%;
-        max-width: 560px;
-        overflow: hidden;
-        transform: translateY(12px) scale(0.97);
-        transition: transform 0.25s cubic-bezier(0.22, 1, 0.36, 1);
-      }
-      .gallery-overlay.open .gallery-box {
-        transform: translateY(0) scale(1);
-      }
-      .gallery-head {
-        padding: 0.9rem 1.1rem;
-        border-bottom: 0.5px solid var(--border);
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        gap: 12px;
-      }
-      .gallery-head-left h3 {
-        font-family: "Cormorant Garamond", serif;
-        font-size: 17px;
-        font-weight: 400;
-        color: var(--accent);
-        margin: 0;
-      }
-      .gallery-head-left span {
-        font-size: 11px;
-        color: var(--muted);
-      }
-      .gallery-close-btn {
-        background: none;
-        border: none;
-        cursor: pointer;
-        color: #999;
-        font-size: 22px;
-        line-height: 1;
-        padding: 0;
-        flex-shrink: 0;
-      }
-      .gallery-close-btn:hover { color: var(--accent); }
-
-      .gallery-slider {
-        position: relative;
-        background: #f5f4f0;
-        aspect-ratio: 4 / 3;
-        overflow: hidden;
-      }
-      .gallery-track {
-        display: flex;
-        height: 100%;
-        transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1);
-      }
-      .gallery-slide {
-        flex-shrink: 0;
-        width: 100%;
-        height: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      }
-      .gallery-slide img {
-        max-width: 100%;
-        max-height: 100%;
-        object-fit: contain;
-        padding: 12px;
-      }
-      .gallery-arrow {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        width: 36px;
-        height: 36px;
-        border-radius: 50%;
-        background: rgba(255,255,255,0.92);
-        border: 0.5px solid var(--border);
-        cursor: pointer;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        z-index: 2;
-        transition: box-shadow 0.15s;
-        box-shadow: 0 2px 8px rgba(0,0,0,0.12);
-      }
-      .gallery-arrow:hover { box-shadow: 0 4px 14px rgba(0,0,0,0.2); }
-      .gallery-arrow.prev { left: 10px; }
-      .gallery-arrow.next { right: 10px; }
-      .gallery-arrow svg {
-        width: 14px;
-        height: 14px;
-        stroke: var(--accent);
-        fill: none;
-        stroke-width: 2.2;
-        stroke-linecap: round;
-        stroke-linejoin: round;
-      }
-      .gallery-arrow.hidden { visibility: hidden; }
-      .gallery-counter {
-        position: absolute;
-        bottom: 10px;
-        right: 12px;
-        font-size: 11px;
-        color: rgba(0,0,0,0.45);
-        background: rgba(255,255,255,0.82);
-        padding: 2px 8px;
-        border-radius: 100px;
-        z-index: 2;
-      }
-      .gallery-dots {
-        display: flex;
-        justify-content: center;
-        gap: 6px;
-        padding: 10px 0 12px;
-      }
-      .gallery-dot {
-        width: 6px;
-        height: 6px;
-        border-radius: 50%;
-        background: var(--border);
-        cursor: pointer;
-        transition: background 0.2s, transform 0.2s;
-        border: none;
-        padding: 0;
-      }
-      .gallery-dot.active {
-        background: var(--accent);
-        transform: scale(1.35);
-      }
-      @media (max-width: 480px) {
-        .gallery-box { border-radius: 12px; }
-        .gallery-arrow { width: 30px; height: 30px; }
-      }
     </style>
   </head>
   <body>
@@ -836,16 +656,10 @@
           <div class="card-cat">🪑 Стулья</div>
           <div class="card-name">Стул Ghost с подлокотниками (черный)</div>
           <div class="card-price">400 <span>₽/день</span></div>
-          <div style="display:flex;flex-wrap:wrap;gap:0;">
-            <!-- ЗМІНА: кнопка тепер передає посилання на саму картку -->
-            <button class="btn-more" onclick="openPopup(this)" type="button">
-              + Размеры
-            </button>
-            <!-- ЗМІНА: кнопка "Примеры" — відкриває галерею фото -->
-            <button class="btn-examples" onclick="openGallery(this)" type="button">
-              ✦ Примеры
-            </button>
-          </div>
+          <!-- ЗМІНА: кнопка тепер передає посилання на саму картку -->
+          <button class="btn-more" onclick="openPopup(this)" type="button">
+            + Размеры
+          </button>
         </div>
         <!-- ЗМІНА: додано блок додаткової інформації -->
         <div class="card-extra-info" hidden>
@@ -857,13 +671,6 @@
             <tr><td>Материал</td><td><strong>Поликарбонат</strong></td></tr>
           </table>
           <p class="extra-note">Подходит для свадеб, банкетов и конференций.</p>
-        </div>
-        <!-- ЗМІНА: блок фото прикладів — зберігається прямо в картці -->
-        <div class="card-examples" hidden>
-          <img src="./images/examples/screen-001.jpg" alt="Пример 1" />
-          <img src="./images/examples/screen-002.jpg" alt="Пример 2" />
-          <img src="./images/examples/screen-003.jpg" alt="Пример 3" />
-          <img src="./images/examples/screen-004.jpg" alt="Пример 4" />
         </div>
       </div>
       <div class="card" data-cat="Стулья">
@@ -878,16 +685,10 @@
           <div class="card-cat">🪑 Стулья</div>
           <div class="card-name">Стул Ghost (черный)</div>
           <div class="card-price">400 <span>₽/день</span></div>
-          <div style="display:flex;flex-wrap:wrap;gap:0;">
-            <!-- ЗМІНА: кнопка тепер передає посилання на саму картку -->
-            <button class="btn-more" onclick="openPopup(this)" type="button">
-              + Размеры
-            </button>
-            <!-- ЗМІНА: кнопка "Примеры" — відкриває галерею фото -->
-            <button class="btn-examples" onclick="openGallery(this)" type="button">
-              ✦ Примеры
-            </button>
-          </div>
+          <!-- ЗМІНА: кнопка тепер передає посилання на саму картку -->
+          <button class="btn-more" onclick="openPopup(this)" type="button">
+            + Размеры
+          </button>
         </div>
         <!-- ЗМІНА: додано блок додаткової інформації -->
         <div class="card-extra-info" hidden>
@@ -898,14 +699,7 @@
             <tr><td>Высота сиденья</td><td><strong>46 см</strong></td></tr>
             <tr><td>Материал</td><td><strong>Поликарбонат</strong></td></tr>
           </table>
-          <p class="extra-note">Подходит для свадеб, банкетов и конференций.</p>
-        </div>
-        <!-- ЗМІНА: блок фото прикладів — зберігається прямо в картці -->
-        <div class="card-examples" hidden>
-          <img src="./images/examples/screen-004.jpg" alt="Пример 1" />
-          <img src="./images/examples/screen-005.jpg" alt="Пример 2" />
-          <img src="./images/examples/screen-006.jpg" alt="Пример 3" />
-          <img src="./images/examples/screen-007.jpg" alt="Пример 4" />
+          <p class="extra-note">Классический Ghost без подлокотников. Подходит для любых мероприятий.</p>
         </div>
       </div>
       <div class="card" data-cat="Стулья">
@@ -4298,136 +4092,8 @@
       }
 
       document.addEventListener("keydown", function(e) {
-        if (e.key === "Escape") { closePopup(); closeGallery(); }
+        if (e.key === "Escape") closePopup();
       });
-    </script>
-
-    <!-- ЗМІНА: HTML-шаблон галереї "Примеры" -->
-    <div class="gallery-overlay" id="galleryOverlay" onclick="if(event.target===this)closeGallery();">
-      <div class="gallery-box">
-        <div class="gallery-head">
-          <div class="gallery-head-left">
-            <h3 id="galleryName"></h3>
-            <span id="gallerySubtitle">Примеры использования</span>
-          </div>
-          <button class="gallery-close-btn" onclick="closeGallery()" aria-label="Закрыть">&times;</button>
-        </div>
-        <div class="gallery-slider" id="gallerySlider">
-          <div class="gallery-track" id="galleryTrack"></div>
-          <button class="gallery-arrow prev" id="galleryPrev" onclick="galleryMove(-1)" aria-label="Назад">
-            <svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"/></svg>
-          </button>
-          <button class="gallery-arrow next" id="galleryNext" onclick="galleryMove(1)" aria-label="Вперёд">
-            <svg viewBox="0 0 24 24"><polyline points="9 6 15 12 9 18"/></svg>
-          </button>
-          <div class="gallery-counter" id="galleryCounter"></div>
-        </div>
-        <div class="gallery-dots" id="galleryDots"></div>
-      </div>
-    </div>
-
-    <script>
-      /* ЗМІНА: JS галереї — дані читаються з .card-examples всередині картки */
-      var _galleryCurrent = 0;
-      var _galleryTotal   = 0;
-
-      function openGallery(btn) {
-        /* ЗМІНА: знаходимо батьківську картку і читаємо фото з .card-examples */
-        var card = btn.closest(".card");
-        var name = card.querySelector(".card-name").textContent.trim();
-        var examplesBlock = card.querySelector(".card-examples");
-
-        if (!examplesBlock) return;
-        var imgs = examplesBlock.querySelectorAll("img");
-        if (!imgs.length) return;
-
-        _galleryCurrent = 0;
-        _galleryTotal   = imgs.length;
-
-        /* Заголовок */
-        document.getElementById("galleryName").textContent = name;
-
-        /* Будуємо слайди */
-        var track = document.getElementById("galleryTrack");
-        track.innerHTML = "";
-        imgs.forEach(function(img) {
-          var slide = document.createElement("div");
-          slide.className = "gallery-slide";
-          var im = document.createElement("img");
-          im.src = img.src;
-          im.alt = img.alt || name;
-          slide.appendChild(im);
-          track.appendChild(slide);
-        });
-
-        /* Точки */
-        var dotsWrap = document.getElementById("galleryDots");
-        dotsWrap.innerHTML = "";
-        if (_galleryTotal > 1) {
-          imgs.forEach(function(_, i) {
-            var dot = document.createElement("button");
-            dot.className = "gallery-dot" + (i === 0 ? " active" : "");
-            dot.setAttribute("aria-label", "Фото " + (i + 1));
-            dot.onclick = (function(idx){ return function(){ galleryGoTo(idx); }; })(i);
-            dotsWrap.appendChild(dot);
-          });
-        }
-
-        _galleryUpdateUI();
-        document.getElementById("galleryOverlay").classList.add("open");
-        document.body.style.overflow = "hidden";
-      }
-
-      function closeGallery() {
-        document.getElementById("galleryOverlay").classList.remove("open");
-        document.body.style.overflow = "";
-      }
-
-      function galleryMove(dir) {
-        galleryGoTo(_galleryCurrent + dir);
-      }
-
-      function galleryGoTo(idx) {
-        if (idx < 0 || idx >= _galleryTotal) return;
-        _galleryCurrent = idx;
-        _galleryUpdateUI();
-      }
-
-      function _galleryUpdateUI() {
-        /* Трек */
-        document.getElementById("galleryTrack").style.transform =
-          "translateX(" + (-_galleryCurrent * 100) + "%)";
-
-        /* Стрілки */
-        var prev = document.getElementById("galleryPrev");
-        var next = document.getElementById("galleryNext");
-        prev.classList.toggle("hidden", _galleryCurrent === 0);
-        next.classList.toggle("hidden", _galleryCurrent === _galleryTotal - 1);
-
-        /* Точки */
-        document.querySelectorAll(".gallery-dot").forEach(function(d, i) {
-          d.classList.toggle("active", i === _galleryCurrent);
-        });
-
-        /* Лічильник */
-        document.getElementById("galleryCounter").textContent =
-          (_galleryTotal > 1) ? (_galleryCurrent + 1) + " / " + _galleryTotal : "";
-      }
-
-      /* Свайп на mobile */
-      (function() {
-        var startX = null;
-        var slider = document.getElementById("gallerySlider");
-        slider.addEventListener("touchstart", function(e) {
-          startX = e.touches[0].clientX;
-        }, { passive: true });
-        slider.addEventListener("touchend", function(e) {
-          if (startX === null) return;
-          var diff = startX - e.changedTouches[0].clientX;
-          if (Math.abs(diff) > 40) galleryMove(diff > 0 ? 1 : -1);
-          startX = null;
-        }, { passive: true });
-      })();
     </script>
   </body>
 </html>
