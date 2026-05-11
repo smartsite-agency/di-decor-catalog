@@ -127,6 +127,88 @@
         color: #fff;
       }
 
+      .cat-dropdown-wrap {
+        display: none;
+        position: relative;
+        width: 100%;
+      }
+      .cat-dropdown-toggle {
+        width: 100%;
+        text-align: left;
+        padding: 7px 36px 7px 16px;
+        border-radius: 100px;
+        border: 1px solid var(--border);
+        background: var(--white);
+        font-family: "Inter", sans-serif;
+        font-size: 12px;
+        color: var(--muted);
+        cursor: pointer;
+        transition: all 0.2s ease;
+        white-space: nowrap;
+        position: relative;
+      }
+      .cat-dropdown-toggle.active {
+        background: var(--accent);
+        border-color: var(--accent);
+        color: #fff;
+      }
+      .cat-dropdown-toggle::after {
+        content: "▾";
+        position: absolute;
+        right: 14px;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 11px;
+        opacity: 0.6;
+      }
+      .cat-dropdown-list {
+        display: none;
+        position: absolute;
+        top: calc(100% + 6px);
+        left: 0;
+        right: 0;
+        background: var(--white);
+        border: 1px solid var(--border);
+        border-radius: 14px;
+        padding: 6px;
+        z-index: 100;
+        box-shadow: 0 8px 24px rgba(26,26,46,0.10);
+      }
+      .cat-dropdown-list.open {
+        display: block;
+      }
+      .cat-dropdown-item {
+        display: block;
+        width: 100%;
+        text-align: left;
+        padding: 9px 14px;
+        border: none;
+        background: transparent;
+        font-family: "Inter", sans-serif;
+        font-size: 13px;
+        color: var(--text);
+        cursor: pointer;
+        border-radius: 8px;
+        transition: background 0.15s;
+        white-space: nowrap;
+      }
+      .cat-dropdown-item:hover {
+        background: var(--gold-light);
+        color: var(--accent);
+      }
+      .cat-dropdown-item.active {
+        background: var(--accent);
+        color: #fff;
+      }
+      @media (max-width: 768px) {
+        .filter-wrap {
+          display: none;
+        }
+        .cat-dropdown-wrap {
+          display: block;
+        }
+      }
+
       /* GRID */
       .grid {
         max-width: 1300px;
@@ -478,45 +560,68 @@
         </button>
       </div>
     </div>
+    <div class="cat-dropdown-wrap" id="catDropdownWrap">
+      <div style="max-width:1300px; margin:1.5rem auto 0; padding:0 1.5rem;">
+        <button class="cat-dropdown-toggle active" id="catDropdownToggle" onclick="toggleDropdown()">
+          Всё
+        </button>
+        <div class="cat-dropdown-list" id="catDropdownList">
+          <button class="cat-dropdown-item active" onclick="filterMobile('all','Всё',this)">Всё</button>
+          <button class="cat-dropdown-item" onclick="filterMobile('Стулья','🪑 Стулья',this)">🪑 Стулья</button>
+          <button class="cat-dropdown-item" onclick="filterMobile('Столы','🪞 Столы',this)">🪞 Столы</button>
+          <button class="cat-dropdown-item" onclick="filterMobile('Мебель_для_деловых_мероприятий','🏢 Мебель для деловых мероприятий',this)">🏢 Мебель для деловых мероприятий</button>
+          <button class="cat-dropdown-item" onclick="filterMobile('Бары_и_стеллажи','🍸 Бары и стеллажи',this)">🍸 Бары и стеллажи</button>
+          <button class="cat-dropdown-item" onclick="filterMobile('Дополнительное_оборудование','🔧 Дополнительное оборудование',this)">🔧 Дополнительное оборудование</button>
+          <button class="cat-dropdown-item" onclick="filterMobile('Фотозона','📸 Фотозона',this)">📸 Фотозона</button>
+          <button class="cat-dropdown-item" onclick="filterMobile('Lounge','🛋️ Lounge',this)">🛋️ Lounge</button>
+          <button class="cat-dropdown-item" onclick="filterMobile('Кресла','💺 Кресла',this)">💺 Кресла</button>
+          <button class="cat-dropdown-item" onclick="filterMobile('Диваны','🛋️ Диваны',this)">🛋️ Диваны</button>
+          <button class="cat-dropdown-item" onclick="filterMobile('Посуда','🍷 Посуда',this)">🍷 Посуда</button>
+          <button class="cat-dropdown-item" onclick="filterMobile('Пуфы_и_банкетки','🪑 Пуфы и банкетки',this)">🪑 Пуфы и банкетки</button>
+          <button class="cat-dropdown-item" onclick="filterMobile('Тепловое_оборудование','🔥 Тепловое оборудование',this)">🔥 Тепловое оборудование</button>
+          <button class="cat-dropdown-item" onclick="filterMobile('Улица','☀️ Улица',this)">☀️ Улица</button>
+          <button class="cat-dropdown-item" onclick="filterMobile('Мебель_из_паллет','🪵 Мебель из паллет',this)">🪵 Мебель из паллет</button>
+        </div>
+      </div>
+    </div>
     <div class="filter-wrap" id="filterWrap">
       <button class="filter-btn active" onclick="filter('all', this)">
-        Всё</button
-      ><button class="filter-btn" onclick="filter('Стулья', this)">
-        🪑 Стулья</button
-      ><button class="filter-btn" onclick="filter('Столы', this)">
-        🪞 Столы</button
-      ><button
+        Всё</button>
+      <button class="filter-btn" onclick="filter('Стулья', this)">
+        🪑 Стулья</button>
+      <button class="filter-btn" onclick="filter('Столы', this)">
+        🪞 Столы</button>
+      <button
         class="filter-btn"
         onclick="filter('Мебель_для_деловых_мероприятий', this)"
       >
-        🏢 Мебель для деловых мероприятий</button
-      ><button class="filter-btn" onclick="filter('Бары_и_стеллажи', this)">
-        🍸 Бары и стеллажи</button
-      ><button
+        🏢 Мебель для деловых мероприятий</button>
+      <button class="filter-btn" onclick="filter('Бары_и_стеллажи', this)">
+        🍸 Бары и стеллажи</button>
+      <button
         class="filter-btn"
         onclick="filter('Дополнительное_оборудование', this)"
       >
-        🔧 Дополнительное оборудование</button
-      ><button class="filter-btn" onclick="filter('Фотозона', this)">
-        📸 Фотозона</button
-      ><button class="filter-btn" onclick="filter('Lounge', this)">
-        🛋️ Lounge</button
-      ><button class="filter-btn" onclick="filter('Кресла', this)">
-        💺 Кресла</button
-      ><button class="filter-btn" onclick="filter('Диваны', this)">
-        🛋️ Диваны</button
-      ><button class="filter-btn" onclick="filter('Посуда', this)">
-        🍷 Посуда</button
-      ><button class="filter-btn" onclick="filter('Пуфы_и_банкетки', this)">
-        🪑 Пуфы и банкетки</button
-      ><button
+        🔧 Дополнительное оборудование</button>
+      <button class="filter-btn" onclick="filter('Фотозона', this)">
+        📸 Фотозона</button>
+      <button class="filter-btn" onclick="filter('Lounge', this)">
+        🛋️ Lounge</button>
+      <button class="filter-btn" onclick="filter('Кресла', this)">
+        💺 Кресла</button>
+      <button class="filter-btn" onclick="filter('Диваны', this)">
+        🛋️ Диваны</button>
+      <button class="filter-btn" onclick="filter('Посуда', this)">
+        🍷 Посуда</button>
+      <button class="filter-btn" onclick="filter('Пуфы_и_банкетки', this)">
+        🪑 Пуфы и банкетки</button>
+      <button
         class="filter-btn"
-        onclick="filter('Тепловое_оборудование', this)"
-      >
-        🔥 Тепловое оборудование</button
-      ><button class="filter-btn" onclick="filter('Улица', this)">
-        ☀️ Улица</button
-      ><button class="filter-btn" onclick="filter('Мебель_из_паллет', this)">
+        onclick="filter('Тепловое_оборудование', this)">
+        🔥 Тепловое оборудование</button>
+      <button class="filter-btn" onclick="filter('Улица', this)">
+        ☀️ Улица</button>
+      <button class="filter-btn" onclick="filter('Мебель_из_паллет', this)">
         🪵 Мебель из паллет
       </button>
     </div>
@@ -3833,6 +3938,38 @@
           card.classList.toggle("hidden", !(matchCat && matchSearch));
         });
       }
+
+      function toggleDropdown() {
+        document.getElementById("catDropdownList").classList.toggle("open");
+      }
+
+      function filterMobile(cat, label, btn) {
+        activeFilter = cat;
+        searchQ = "";
+        document.getElementById("searchInput").value = "";
+
+        const toggle = document.getElementById("catDropdownToggle");
+        toggle.textContent = label;
+        toggle.classList.toggle("active", cat === "all");
+
+        document.querySelectorAll(".cat-dropdown-item")
+          .forEach((i) => i.classList.remove("active"));
+        btn.classList.add("active");
+
+        document.getElementById("catDropdownList").classList.remove("open");
+
+        document.querySelectorAll(".filter-btn")
+          .forEach((b) => b.classList.remove("active"));
+
+        applyFilters();
+      }
+
+      document.addEventListener("click", function(e) {
+        const wrap = document.getElementById("catDropdownWrap");
+        if (wrap && !wrap.contains(e.target)) {
+          document.getElementById("catDropdownList").classList.remove("open");
+        }
+      });
     </script>
 
     <!-- POPUP -->
