@@ -40,7 +40,7 @@
       /* HEADER */
       .header {
         background: var(--accent);
-        padding: 3rem 2rem 2.5rem;
+        padding: 1.1rem 1rem 1.1rem;
         text-align: center;
         position: relative;
         overflow: hidden;
@@ -249,24 +249,57 @@
         margin: 1.5rem auto 0;
         padding: 0 1.5rem;
       }
-      .search-input {
-        width: 100%;
-        max-width: 400px;
-        padding: 10px 16px;
-        border-radius: 100px;
+      .search-box {
+        display: inline-flex;
+        align-items: center;
         border: 1px solid var(--border);
+        border-radius: 100px;
         background: var(--white);
+        max-width: 400px;
+        width: 100%;
+        transition: border-color 0.2s;
+      }
+      .search-box:focus-within {
+        border-color: var(--gold);
+      }
+      .search-input {
+        flex: 1;
+        padding: 10px 12px 10px 16px;
+        border: none;
+        border-radius: 100px 0 0 100px;
+        background: transparent;
         font-family: "Inter", sans-serif;
         font-size: 13px;
         color: var(--text);
         outline: none;
-        transition: border-color 0.2s;
-      }
-      .search-input:focus {
-        border-color: var(--gold);
       }
       .search-input::placeholder {
         color: var(--muted);
+      }
+      .search-btn {
+        flex-shrink: 0;
+        width: 36px;
+        height: 36px;
+        margin: 2px 2px 2px 0;
+        border-radius: 100px;
+        border: none;
+        background: var(--accent);
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: background 0.2s;
+      }
+      .search-btn:hover {
+        background: #252547;
+      }
+      .search-btn svg {
+        width: 15px;
+        height: 15px;
+        stroke: var(--gold);
+        fill: none;
+        stroke-width: 2;
+        stroke-linecap: round;
       }
 
       /* === POPUP STYLES === */
@@ -432,12 +465,18 @@
       </div>
     </div>
     <div class="search-wrap">
-      <input
-        type="text"
-        class="search-input"
-        placeholder="Поиск по названию..."
-        oninput="searchItems(this.value)"
-      />
+      <div class="search-box">
+        <input
+          type="text"
+          id="searchInput"
+          class="search-input"
+          placeholder="Поиск по названию..."
+          oninput="searchItems(this.value)"
+        />
+        <button class="search-btn" aria-label="Поиск" onclick="searchItems(document.getElementById('searchInput').value)">
+          <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><line x1="16.5" y1="16.5" x2="22" y2="22"/></svg>
+        </button>
+      </div>
     </div>
     <div class="filter-wrap" id="filterWrap">
       <button class="filter-btn active" onclick="filter('all', this)">
@@ -3771,6 +3810,8 @@
           .querySelectorAll(".filter-btn")
           .forEach((b) => b.classList.remove("active"));
         btn.classList.add("active");
+        searchQ = "";
+        document.getElementById("searchInput").value = "";
         applyFilters();
       }
 
