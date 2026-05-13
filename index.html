@@ -315,6 +315,13 @@
         margin-left: 2px;
       }
 
+      .card-buttons {
+        display:flex;
+        flex-wrap:
+        wrap;
+        gap:0;
+      }
+
       /* FOOTER */
       footer {
         text-align: center;
@@ -841,29 +848,20 @@
           <div class="card-cat">🪑 Стулья</div>
           <div class="card-name">Стул Ghost с подлокотниками (черный)</div>
           <div class="card-price">400 <span>₽/день</span></div>
-          <div style="display:flex;flex-wrap:wrap;gap:0;">
-            <!-- ЗМІНА: кнопка тепер передає посилання на саму картку -->
+          <div class="card-buttons">
             <button class="btn-more" onclick="openPopup(this)" type="button">
               + Размеры
             </button>
-            <!-- ЗМІНА: кнопка "Примеры" — відкриває галерею фото -->
-            <button class="btn-examples" onclick="openGallery(this)" type="button">
-              ✦ Примеры
-            </button>
           </div>
         </div>
-        <!-- ЗМІНА: додано блок додаткової інформації -->
         <div class="card-extra-info" hidden>
           <table>
+            <tr><td>Диаметр</td><td><strong>38 см</strong></td></tr>
             <tr><td>Ширина</td><td><strong>49 см</strong></td></tr>
-            <tr><td>Глубина</td><td><strong>38 см</strong></td></tr>
             <tr><td>Высота</td><td><strong>91 см</strong></td></tr>
-            <tr><td>Высота сиденья</td><td><strong>46 см</strong></td></tr>
-            <tr><td>Материал</td><td><strong>Поликарбонат</strong></td></tr>
           </table>
           <p class="extra-note">Подходит для свадеб, банкетов и конференций.</p>
         </div>
-        <!-- ЗМІНА: блок фото прикладів — зберігається прямо в картці -->
         <div class="card-examples" hidden>
           <img src="./images/examples/screen-001.jpg" alt="Пример 1" />
           <img src="./images/examples/screen-002.jpg" alt="Пример 2" />
@@ -883,29 +881,23 @@
           <div class="card-cat">🪑 Стулья</div>
           <div class="card-name">Стул Ghost (черный)</div>
           <div class="card-price">400 <span>₽/день</span></div>
-          <div style="display:flex;flex-wrap:wrap;gap:0;">
-            <!-- ЗМІНА: кнопка тепер передає посилання на саму картку -->
+          <div class="card-buttons">
             <button class="btn-more" onclick="openPopup(this)" type="button">
               + Размеры
             </button>
-            <!-- ЗМІНА: кнопка "Примеры" — відкриває галерею фото -->
             <button class="btn-examples" onclick="openGallery(this)" type="button">
               ✦ Примеры
             </button>
           </div>
         </div>
-        <!-- ЗМІНА: додано блок додаткової інформації -->
         <div class="card-extra-info" hidden>
           <table>
+            <tr><td>Диаметр</td><td><strong>38 см</strong></td></tr>
             <tr><td>Ширина</td><td><strong>49 см</strong></td></tr>
-            <tr><td>Глубина</td><td><strong>38 см</strong></td></tr>
             <tr><td>Высота</td><td><strong>91 см</strong></td></tr>
-            <tr><td>Высота сиденья</td><td><strong>46 см</strong></td></tr>
-            <tr><td>Материал</td><td><strong>Поликарбонат</strong></td></tr>
           </table>
           <p class="extra-note">Подходит для свадеб, банкетов и конференций.</p>
         </div>
-        <!-- ЗМІНА: блок фото прикладів — зберігається прямо в картці -->
         <div class="card-examples" hidden>
           <img src="./images/examples/screen-004.jpg" alt="Пример 1" />
           <img src="./images/examples/screen-005.jpg" alt="Пример 2" />
@@ -925,6 +917,19 @@
           <div class="card-cat">🪑 Стулья</div>
           <div class="card-name">Стул Ghost (прозрачный)</div>
           <div class="card-price">320 <span>₽/день</span></div>
+          <div class="card-buttons">
+            <button class="btn-more" onclick="openPopup(this)" type="button">
+              + Размеры
+            </button>
+          </div>
+        </div>
+        <div class="card-extra-info" hidden>
+          <table>
+            <tr><td>Диаметр</td><td><strong>57 см</strong></td></tr>
+            <tr><td>Ширина</td><td><strong>54 см</strong></td></tr>
+            <tr><td>Высота</td><td><strong>92 см</strong></td></tr>
+          </table>
+          <p class="extra-note">Подходит для свадеб, банкетов и конференций.</p>
         </div>
       </div>
       <div class="card" data-cat="Стулья">
@@ -939,6 +944,19 @@
           <div class="card-cat">🪑 Стулья</div>
           <div class="card-name">Стул Прованс</div>
           <div class="card-price">550 <span>₽/день</span></div>
+          <div class="card-buttons">
+            <button class="btn-more" onclick="openPopup(this)" type="button">
+              + Размеры
+            </button>
+          </div>
+        </div>
+        <div class="card-extra-info" hidden>
+          <table>
+            <tr><td>Диаметр</td><td><strong>57 см</strong></td></tr>
+            <tr><td>Ширина</td><td><strong>60 см</strong></td></tr>
+            <tr><td>Высота</td><td><strong>92 см</strong></td></tr>
+          </table>
+          <p class="extra-note">Подходит для свадеб, банкетов и конференций.</p>
         </div>
       </div>
       <div class="card" data-cat="Стулья">
@@ -953,6 +971,19 @@
           <div class="card-cat">🪑 Стулья</div>
           <div class="card-name">Стул складной (черный)</div>
           <div class="card-price">150 <span>₽/день</span></div>
+          <div class="card-buttons">
+            <button class="btn-more" onclick="openPopup(this)" type="button">
+              + Размеры
+            </button>
+          </div>
+        </div>
+        <div class="card-extra-info" hidden>
+          <table>
+            <tr><td>Диаметр</td><td><strong>48 см</strong></td></tr>
+            <tr><td>Ширина</td><td><strong>43 см</strong></td></tr>
+            <tr><td>Высота</td><td><strong>94 см</strong></td></tr>
+          </table>
+          <p class="extra-note">Подходит для свадеб, банкетов и конференций.</p>
         </div>
       </div>
       <div class="card" data-cat="Стулья">
@@ -967,6 +998,18 @@
           <div class="card-cat">🪑 Стулья</div>
           <div class="card-name">Стул Роджер (белый)</div>
           <div class="card-price">250 <span>₽/день</span></div>
+          <div class="card-buttons">
+            <button class="btn-more" onclick="openPopup(this)" type="button">
+              + Размеры
+            </button>
+          </div>
+        </div>
+        <div class="card-extra-info" hidden>
+          <table>
+            <tr><td>Диаметр</td><td><strong>48 см</strong></td></tr>
+            <tr><td>Ширина</td><td><strong>43 см</strong></td></tr>
+            <tr><td>Высота</td><td><strong>94 см</strong></td></tr>
+          </table>
         </div>
       </div>
       <div class="card" data-cat="Стулья">
@@ -1051,6 +1094,20 @@
           <div class="card-cat">🪑 Стулья</div>
           <div class="card-name">Барный стул Boston</div>
           <div class="card-price">600 <span>₽/день</span></div>
+          <div class="card-buttons">
+            <button class="btn-more" onclick="openPopup(this)" type="button">
+              + Размеры
+            </button>
+          </div>
+        </div>
+        <div class="card-extra-info" hidden>
+          <table>
+            <tr><td>Глубина</td><td><strong>56 см</strong></td></tr>
+            <tr><td>Ширина</td><td><strong>47 см</strong></td></tr>
+            <tr><td>Высота</td><td><strong>91 см</strong></td></tr>
+          </table>
+          <p class="extra-note">Цвет обивки белый (экокожа), 
+ножек хром (металл)</p>
         </div>
       </div>
       <div class="card" data-cat="Стулья">
@@ -1079,6 +1136,19 @@
           <div class="card-cat">🪑 Стулья</div>
           <div class="card-name">Стул складной Терье</div>
           <div class="card-price">200 <span>₽/день</span></div>
+          <div class="card-buttons">
+            <button class="btn-more" onclick="openPopup(this)" type="button">
+              + Размеры
+            </button>
+          </div>
+        </div>
+        <div class="card-extra-info" hidden>
+          <table>
+            <tr><td>Диаметр</td><td><strong>48 см</strong></td></tr>
+            <tr><td>Ширина</td><td><strong>43 см</strong></td></tr>
+            <tr><td>Высота</td><td><strong>94 см</strong></td></tr>
+          </table>
+          <p class="extra-note">Подходит для свадеб, банкетов и конференций.</p>
         </div>
       </div>
       <div class="card" data-cat="Стулья">
@@ -1093,6 +1163,32 @@
           <div class="card-cat">🪑 Стулья</div>
           <div class="card-name">Стул Кантри с подушкой</div>
           <div class="card-price">400 <span>₽/день</span></div>
+          <div class="card-buttons">
+            <button class="btn-more" onclick="openPopup(this)" type="button">
+              + Размеры
+            </button>
+            <button class="btn-examples" onclick="openGallery(this)" type="button">
+              ✦ Примеры
+            </button>
+          </div>
+        </div>
+        <div class="card-extra-info" hidden>
+          <table>
+            <tr><td>Диаметр</td><td><strong>40 см</strong></td></tr>
+            <tr><td>Ширина</td><td><strong>50, 48 см</strong></td></tr>
+            <tr><td>Высота</td><td><strong>90, 88 см</strong></td></tr>
+            <tr><td>Глубина</td><td><strong>45 см</strong></td></tr>
+          </table>
+          <p class="extra-note">Подходит для свадеб, банкетов.</p>
+        </div>
+        <div class="card-examples" hidden>
+          <img src="./images/examples/stul-kantri-001.jpg" />
+          <img src="./images/examples/stul-kantri-002.jpg" />
+          <img src="./images/examples/stul-kantri-003.jpg" />
+          <img src="./images/examples/stul-kantri-004.jpg" />
+          <img src="./images/examples/stul-kantri-005.jpg" />
+          <img src="./images/examples/stul-kantri-006.jpg" />
+          <img src="./images/examples/stul-kantri-007.jpg" />
         </div>
       </div>
       <div class="card" data-cat="Стулья">
@@ -1107,6 +1203,19 @@
           <div class="card-cat">🪑 Стулья</div>
           <div class="card-name">Стул Patric</div>
           <div class="card-price">800 <span>₽/день</span></div>
+          <div class="card-buttons">
+            <button class="btn-more" onclick="openPopup(this)" type="button">
+              + Размеры
+            </button>
+          </div>
+        </div>
+        <div class="card-extra-info" hidden>
+          <table>
+            <tr><td>Диаметр</td><td><strong>57 см</strong></td></tr>
+            <tr><td>Ширина</td><td><strong>54 см</strong></td></tr>
+            <tr><td>Высота</td><td><strong>92 см</strong></td></tr>
+          </table>
+          <p class="extra-note">2 варианта спинок: белая экокожа и из ротанга</p>
         </div>
       </div>
       <div class="card" data-cat="Стулья">
@@ -1121,6 +1230,19 @@
           <div class="card-cat">🪑 Стулья</div>
           <div class="card-name">Стул Nordic</div>
           <div class="card-price">750 <span>₽/день</span></div>
+          <div class="card-buttons">
+            <button class="btn-more" onclick="openPopup(this)" type="button">
+              + Размеры
+            </button>
+          </div>
+        </div>
+        <div class="card-extra-info" hidden>
+          <table>
+            <tr><td>Диаметр</td><td><strong>57 см</strong></td></tr>
+            <tr><td>Ширина</td><td><strong>54 см</strong></td></tr>
+            <tr><td>Высота</td><td><strong>92 см</strong></td></tr>
+          </table>
+          <p class="extra-note">Варианты цвета подушек: белый, розовый, голубой</p>
         </div>
       </div>
       <div class="card" data-cat="Стулья">
@@ -1135,6 +1257,18 @@
           <div class="card-cat">🪑 Стулья</div>
           <div class="card-name">Стул Вашингтон</div>
           <div class="card-price">650 <span>₽/день</span></div>
+          <div class="card-buttons">
+            <button class="btn-more" onclick="openPopup(this)" type="button">
+              + Размеры
+            </button>
+          </div>
+        </div>
+        <div class="card-extra-info" hidden>
+          <table>
+            <tr><td>Диаметр</td><td><strong>48 см</strong></td></tr>
+            <tr><td>Ширина</td><td><strong>43 см</strong></td></tr>
+            <tr><td>Высота</td><td><strong>95 см</strong></td></tr>
+          </table>
         </div>
       </div>
       <div class="card" data-cat="Стулья">
@@ -1150,6 +1284,14 @@
           <div class="card-name">Стул Stay</div>
           <div class="card-price">650 <span>₽/день</span></div>
         </div>
+        <div class="card-extra-info" hidden>
+          <table>
+            <tr><td>Диаметр</td><td><strong>48 см</strong></td></tr>
+            <tr><td>Ширина</td><td><strong>43 см</strong></td></tr>
+            <tr><td>Высота</td><td><strong>95 см</strong></td></tr>
+          </table>
+          <p class="extra-note">Варианты цвета подушек: белый, розовый, голубой</p>
+        </div>
       </div>
       <div class="card" data-cat="Стулья">
         <div class="card-img">
@@ -1164,6 +1306,14 @@
           <div class="card-cat">🪑 Стулья</div>
           <div class="card-name">Стул Октава Белый велюр</div>
           <div class="card-price">350 <span>₽/день</span></div>
+        </div>
+
+        <div class="card-extra-info" hidden>
+          <table>
+            <tr><td>Диаметр</td><td><strong>48 см</strong></td></tr>
+            <tr><td>Ширина</td><td><strong>50 см</strong></td></tr>
+            <tr><td>Высота</td><td><strong>90 см</strong></td></tr>
+          </table>
         </div>
       </div>
       <div class="card" data-cat="Стулья">
