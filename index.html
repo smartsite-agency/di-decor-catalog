@@ -540,7 +540,7 @@
       .back-to-top {
         position: fixed;
         right: 13px;
-        bottom: 29px;
+        bottom: 60px;
         width: 40px;
         height: 40px;
         border-radius: 50%;
@@ -744,6 +744,48 @@
         .gallery-box { border-radius: 12px; }
         .gallery-arrow { width: 30px; height: 30px; }
       }
+
+
+      /* TELEGRAM FLOAT BUTTON */
+    .tg-float {
+      position: fixed;
+      bottom: 13px;
+      right: 13px;
+      z-index: 999;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      background: #1a1a2e;
+      color: #fff;
+      border-radius: 100px;
+      padding: 8px 10px 8px 10px;
+      text-decoration: none;
+      font-family: "Inter", sans-serif;
+      font-size: 13px;
+      font-weight: 400;
+      letter-spacing: 0.03em;
+      box-shadow: 0 6px 24px rgba(26,26,46,0.22);
+      transition: background 0.2s, transform 0.2s, box-shadow 0.2s;
+      white-space: nowrap;
+    }
+    .tg-float:hover {
+      background: #252547;
+      transform: translateY(-2px);
+      box-shadow: 0 10px 32px rgba(26,26,46,0.28);
+    }
+    .tg-float svg {
+      width: 22px;
+      height: 22px;
+      flex-shrink: 0;
+    }
+    @media (max-width: 768px) {
+      .tg-float {
+        bottom: 20px;
+        right: 16px;
+        padding: 10px 16px 10px 12px;
+        font-size: 12px;
+      }
+    }
     </style>
   </head>
   <body>
@@ -7740,8 +7782,6 @@
     </div>
 
     <script>
-      /* ЗМІНА: popupData видалено. Дані тепер читаються з .card-extra-info
-         всередині конкретної картки товару. */
 
       function openPopup(btn) {
         /* ЗМІНА: btn — це кнопка всередині картки; знаходимо батьківську .card */
@@ -7789,7 +7829,6 @@
       });
     </script>
 
-    <!-- ЗМІНА: HTML-шаблон галереї "Примеры" -->
     <div class="gallery-overlay" id="galleryOverlay" onclick="if(event.target===this)closeGallery();">
       <div class="gallery-box">
         <div class="gallery-head">
@@ -7916,5 +7955,13 @@
         }, { passive: true });
       })();
     </script>
+
+    <a class="tg-float" href="https://t.me/nchernygina" target="_blank" rel="noopener" aria-label="Написати нам у Telegram">
+      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="12" cy="12" r="12" fill="#c9a84c"/>
+        <path d="M5.5 11.8 17 7l-1.8 9.5-3.5-2.4-1.7 1.6.3-3.3 5.2-4.8-6.5 4-3.5-1.2z" fill="#1a1a2e"/>
+      </svg>
+      Написать нам
+    </a>
   </body>
 </html>
