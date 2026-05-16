@@ -541,19 +541,25 @@
         position: fixed;
         right: 13px;
         bottom: 111px;
-        width: 40px;
-        height: 40px;
+        width: 46px;
+        height: 46px;
         border-radius: 50%;
         background: #484880;
         text-decoration: none;
         box-shadow: 0 6px 16px rgba(0,0,0,.25);
+        animation: btt-bounce 2.4s ease-in-out infinite;
+      }
+
+      @keyframes btt-bounce {
+        0%, 100% { transform: translateY(0); }
+        50%       { transform: translateY(-5px); }
       }
 
       .back-to-top::before {
         content: "";
         position: absolute;
-        top: 16px;
-        left: 14px;
+        top: 18px;
+        left: 16px;
         width: 12px;
         height: 12px;
         border-top: 4px solid #fff;
@@ -563,6 +569,7 @@
 
       .back-to-top:hover {
         background: #252547;
+        animation-play-state: paused;
       }
 
       /* === EXAMPLES BUTTON === */
