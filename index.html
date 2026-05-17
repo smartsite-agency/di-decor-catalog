@@ -548,6 +548,13 @@
         text-decoration: none;
         box-shadow: 0 6px 16px rgba(0,0,0,.25);
         animation: btt-bounce 2.4s ease-in-out infinite;
+        opacity: 0;
+        visibility: hidden;
+        transition: background 0.2s, box-shadow 0.2s, opacity 0.3s, visibility 0.3s;
+      }
+      .back-to-top.visible {
+        opacity: 1;
+        visibility: visible;
       }
 
       @keyframes btt-bounce {
@@ -1279,6 +1286,7 @@
 
         <div class="card-examples" hidden>
           <img src="./images/examples/stul-barnyy-b-01.jpg" />
+          <img src="./images/examples/stul-barnyy-b-02.jpg" />
         </div>
       </div>
       <div class="card" data-cat="Стулья">
@@ -1624,10 +1632,11 @@
 
         <div class="card-examples" hidden>
           <img src="./images/examples/stul-daymond-01.jpg" />
-          <img src="./images/examples/stul-daymond-02.jpg" />
           <img src="./images/examples/stul-daymond-03.jpg" />
           <img src="./images/examples/stul-daymond-04.jpg" />
+          <img src="./images/examples/stul-daymond-06.webp" />
           <img src="./images/examples/stul-daymond-05.jpg" />
+          <img src="./images/examples/stul-daymond-02.jpg" />
         </div>
       </div>
       <div class="card" data-cat="Стулья">
@@ -1651,9 +1660,9 @@
 
         <div class="card-examples" hidden>
           <img src="./images/examples/stul-feniks-02.jpg" />
-          <img src="./images/examples/stul-feniks-03.jpg" />
           <img src="./images/examples/stul-feniks-04.jpg" />
           <img src="./images/examples/stul-feniks-05.jpg" />
+          <img src="./images/examples/stul-feniks-03.jpg" />
         </div>
       </div>
       <div class="card" data-cat="Стулья">
@@ -1894,8 +1903,7 @@
 
         <div class="card-examples" hidden>
           <img src="./images/examples/ofisnoe-kreslo-kolesa-01.jpg" />
-          <img src="./images/examples/example-02.jpg" />
-          <img src="./images/examples/example-03.jpg" />
+          <img src="./images/examples/stol-plenarnyy-ovalnyy-02.jpg" />
         </div>
       </div>
       <div class="card" data-cat="Столы">
@@ -1933,12 +1941,11 @@
 
         <div class="card-examples" hidden>
           <img src="./images/examples/ofisnoe-kreslo-kolesa-02.jpg" />
-          <img src="./images/examples/example-02.jpg" />
-          <img src="./images/examples/example-03.jpg" />
+          <img src="./images/examples/stol-dlya-peregovorov-02.jpg" />
         </div>
       </div>
       <div class="card" data-cat="Столы">
-        <div class="card-img" onclick="openGallery(this)">
+        <div class="card-img">
           <img
             alt="Стол переговорный бежево-белый"
             loading="lazy"
@@ -1953,10 +1960,6 @@
             <button class="btn-more" onclick="openPopup(this)" type="button">
               + Размеры
             </button>
-
-            <button class="btn-examples" onclick="openGallery(this)" type="button">
-              ✦ Примеры
-            </button>
           </div>
         </div>
       
@@ -1967,15 +1970,9 @@
             <tr><td>В</td><td><strong>75 см</strong></td></tr>
           </table>
         </div>
-
-        <div class="card-examples" hidden>
-          <img src="./images/examples/example-01.jpg" />
-          <img src="./images/examples/example-02.jpg" />
-          <img src="./images/examples/example-03.jpg" />
-        </div>
       </div>
       <div class="card" data-cat="Столы">
-        <div class="card-img" onclick="openGallery(this)">
+        <div class="card-img">
           <img
             alt="Стол переговорный белый"
             loading="lazy"
@@ -1990,10 +1987,6 @@
             <button class="btn-more" onclick="openPopup(this)" type="button">
               + Размеры
             </button>
-
-            <button class="btn-examples" onclick="openGallery(this)" type="button">
-              ✦ Примеры
-            </button>
           </div>
         </div>
       
@@ -2003,12 +1996,6 @@
             <tr><td>Ш</td><td><strong>90 см</strong></td></tr>
             <tr><td>В</td><td><strong>75 см</strong></td></tr>
           </table>
-        </div>
-
-        <div class="card-examples" hidden>
-          <img src="./images/examples/example-01.jpg" />
-          <img src="./images/examples/example-02.jpg" />
-          <img src="./images/examples/example-03.jpg" />
         </div>
       </div>
       <div class="card" data-cat="Столы">
@@ -2042,9 +2029,12 @@
         </div>
 
         <div class="card-examples" hidden>
-          <img src="./images/examples/example-01.jpg" />
-          <img src="./images/examples/example-02.jpg" />
-          <img src="./images/examples/example-03.jpg" />
+          <img src="./images/examples/stol-banketnyy-01.jpg" />
+          <img src="./images/examples/stol-banketnyy-04.jpg" />
+          <img src="./images/examples/stul-vashington-05.jpg" />
+          <img src="./images/examples/stul-stay-01.jpg" />
+          <img src="./images/examples/stul-stay-02.jpg" />
+          <img src="./images/examples/stol-banketnyy-02.jpg" />
         </div>
       </div>
       <div class="card" data-cat="Столы">
@@ -2080,8 +2070,7 @@
 
         <div class="card-examples" hidden>
           <img src="./images/examples/stol-konferents-01.jpg" />
-          <img src="./images/examples/example-02.jpg" />
-          <img src="./images/examples/example-03.jpg" />
+          <img src="./images/examples/stol-konferents-02.jpg" />
         </div>
       </div>
       <div class="card" data-cat="Столы">
@@ -2116,9 +2105,7 @@
         </div>
 
         <div class="card-examples" hidden>
-          <img src="./images/examples/example-01.jpg" />
-          <img src="./images/examples/example-02.jpg" />
-          <img src="./images/examples/example-03.jpg" />
+          <img src="./images/examples/barnyy-stol-01.jpg" />
         </div>
       </div>
       <div class="card" data-cat="Столы">
@@ -2151,15 +2138,16 @@
         </div>
 
         <div class="card-examples" hidden>
-          <img src="./images/examples/example-01.jpg" />
-          <img src="./images/examples/example-02.jpg" />
-          <img src="./images/examples/example-03.jpg" />
+          <img src="./images/examples/stul-stay-04.jpg" />
+          <img src="./images/examples/stul-selin-03.jpg" />
+          <img src="./images/examples/stul-vashington-01.jpg" />
+          <img src="./images/examples/stol-banketnyy-03.jpg" />
         </div>
       </div>
       <div class="card" data-cat="Столы">
         <div class="card-img" onclick="openGallery(this)">
           <img
-            alt="Стол Nordic (столешница стекло)"
+            alt="Стол Nordic"
             loading="lazy"
             src="./images/stol/stol-nordic-steklo.webp"
           />
@@ -2186,9 +2174,9 @@
         </div>
 
         <div class="card-examples" hidden>
+          <img src="./images/examples/stol-nordic-03.jpg" />
           <img src="./images/examples/stol-nordic-01.jpg" />
           <img src="./images/examples/stol-nordic-02.png" />
-          <img src="./images/examples/stol-nordic-03.jpg" />
         </div>
       </div>
       <div class="card" data-cat="Столы">
@@ -2196,7 +2184,7 @@
           <img
             alt="Стол Прованс с резными ножками"
             loading="lazy"
-            src="./images/stol/stol-provans-s-reznymi-nozhkami.webp"
+            src="./images/stol/stol-provans-s-reznymi-nozhkami-dubl.webp"
           />
         </div>
         <div class="card-body">
@@ -2223,51 +2211,16 @@
         </div>
 
         <div class="card-examples" hidden>
-          <img src="./images/examples/example-01.jpg" />
-          <img src="./images/examples/example-02.jpg" />
-          <img src="./images/examples/example-03.jpg" />
+          <img src="./images/stol/stol-provans-s-reznymi-nozhkami.webp" />
+          <img src="./images/examples/stol-provans-s-reznymi-nozhkami-02.jpg" />
+          <img src="./images/examples/stul-kantri-002.jpg" />
+          <img src="./images/examples/stul-kantri-009.jpg" />
+          <img src="./images/examples/stul-kantri-003.jpg" />
         </div>
       </div>
-      
-      <div class="card" data-cat="Столы">
-        <div class="card-img" onclick="openGallery(this)">
-          <img
-            alt="Стол Прованс с резными ножками"
-            loading="lazy"
-            src="./images/stol/stol-provans-s-reznymi-nozhkami-dubl.webp"
-          />
-        </div>
-        <div class="card-body">
-          <div class="card-cat">🪞 Столы</div>
-          <div class="card-name">Стол Прованс с резными ножками</div>
-          <div class="card-price">3 500 <span>₽/день</span></div>
-          <div class="card-buttons">
-            <button class="btn-more" onclick="openPopup(this)" type="button">
-              + Размеры
-            </button>
 
-            <button class="btn-examples" onclick="openGallery(this)" type="button">
-              ✦ Примеры
-            </button>
-          </div>
-        </div>
-      
-        <div class="card-extra-info" hidden>
-          <table>
-            <tr><td>Д</td><td><strong>250 см</strong></td></tr>
-            <tr><td>Ш</td><td><strong>90 см</strong></td></tr>
-            <tr><td>В</td><td><strong>75 см</strong></td></tr>
-          </table>
-        </div>
-
-        <div class="card-examples" hidden>
-          <img src="./images/examples/example-01.jpg" />
-          <img src="./images/examples/example-02.jpg" />
-          <img src="./images/examples/example-03.jpg" />
-        </div>
-      </div>
       <div class="card" data-cat="Столы">
-        <div class="card-img" onclick="openGallery(this)">
+        <div class="card-img">
           <img
             alt="Стол Прованс (светлое дерево)"
             loading="lazy"
@@ -2282,10 +2235,6 @@
             <button class="btn-more" onclick="openPopup(this)" type="button">
               + Размеры
             </button>
-
-            <button class="btn-examples" onclick="openGallery(this)" type="button">
-              ✦ Примеры
-            </button>
           </div>
         </div>
       
@@ -2295,12 +2244,6 @@
             <tr><td>Ш</td><td><strong>90 см</strong></td></tr>
             <tr><td>В</td><td><strong>75 см</strong></td></tr>
           </table>
-        </div>
-
-        <div class="card-examples" hidden>
-          <img src="./images/examples/example-01.jpg" />
-          <img src="./images/examples/example-02.jpg" />
-          <img src="./images/examples/example-03.jpg" />
         </div>
       </div>
       <div class="card" data-cat="Столы">
@@ -2336,8 +2279,6 @@
 
         <div class="card-examples" hidden>
           <img src="./images/examples/stol-white-wave-01.png" />
-          <img src="./images/examples/example-02.jpg" />
-          <img src="./images/examples/example-03.jpg" />
         </div>
       </div>
       <div class="card" data-cat="Столы">
@@ -2367,7 +2308,7 @@
         </div>
       </div>
       <div class="card" data-cat="Столы">
-        <div class="card-img" onclick="openGallery(this)">
+        <div class="card-img">
           <img
             alt="Стол журнальный Lite"
             loading="lazy"
@@ -2382,10 +2323,6 @@
             <button class="btn-more" onclick="openPopup(this)" type="button">
               + Размеры
             </button>
-
-            <button class="btn-examples" onclick="openGallery(this)" type="button">
-              ✦ Примеры
-            </button>
           </div>
         </div>
       
@@ -2395,12 +2332,6 @@
             <tr><td>Ш</td><td><strong>60 см</strong></td></tr>
             <tr><td>В</td><td><strong>45 см</strong></td></tr>
           </table>
-        </div>
-
-        <div class="card-examples" hidden>
-          <img src="./images/examples/example-01.jpg" />
-          <img src="./images/examples/example-02.jpg" />
-          <img src="./images/examples/example-03.jpg" />
         </div>
       </div>
       <div class="card" data-cat="Столы">
@@ -2435,9 +2366,8 @@
         </div>
 
         <div class="card-examples" hidden>
-          <img src="./images/examples/example-01.jpg" />
-          <img src="./images/examples/example-02.jpg" />
-          <img src="./images/examples/example-03.jpg" />
+          <img src="./images/examples/puf-obogrevatel-stolik.jpg" />
+          <img src="./images/examples/puf-chan-stolik.jpg" />
         </div>
       </div>
       <div class="card" data-cat="Столы">
@@ -2472,9 +2402,7 @@
         </div>
 
         <div class="card-examples" hidden>
-          <img src="./images/examples/example-01.jpg" />
-          <img src="./images/examples/example-02.jpg" />
-          <img src="./images/examples/example-03.jpg" />
+          <img src="./images/examples/stol-s-reznymi-01.jpg" />
         </div>
       </div>
       <div class="card" data-cat="Столы">
@@ -2493,10 +2421,6 @@
             <button class="btn-more" onclick="openPopup(this)" type="button">
               + Размеры
             </button>
-
-            <button class="btn-examples" onclick="openGallery(this)" type="button">
-              ✦ Примеры
-            </button>
           </div>
         </div>
       
@@ -2506,12 +2430,6 @@
             <tr><td>Ш</td><td><strong>41 см</strong></td></tr>
             <tr><td>В</td><td><strong>77 см</strong></td></tr>
           </table>
-        </div>
-
-        <div class="card-examples" hidden>
-          <img src="./images/examples/example-01.jpg" />
-          <img src="./images/examples/example-02.jpg" />
-          <img src="./images/examples/example-03.jpg" />
         </div>
       </div>
       <div class="card" data-cat="Столы">
@@ -2534,9 +2452,8 @@
         </div>
 
         <div class="card-examples" hidden>
-          <img src="./images/examples/example-01.jpg" />
-          <img src="./images/examples/example-02.jpg" />
-          <img src="./images/examples/example-03.jpg" />
+          <img src="./images/examples/stol-volna-01.jpg" />
+          <img src="./images/examples/stol-volna-02.jpg" />
         </div>
       </div>
       <div class="card" data-cat="Столы">
@@ -2595,8 +2512,10 @@
         </div>
 
         <div class="card-examples" hidden>
-          <img src="./images/examples/example-01.jpg" />
-          <img src="./images/examples/example-02.jpg" />
+          <img src="./images/examples/stol-kokteylnyy-chernyy-01.jpg" />
+          <img src="./images/examples/stol-kokteylnyy-chernyy-02.jpg" />
+          <img src="./images/examples/stol-kokteylnyy-chernyy-03.jpg" />
+          <img src="./images/examples/stol-kokteylnyy-chernyy-04.jpg" />
           <img src="./images/stol/stol-kokteylnyy-chernyy-serebro.webp" />
         </div>
       </div>
@@ -2610,7 +2529,7 @@
         </div>
         <div class="card-body">
           <div class="card-cat">🪞 Столы</div>
-          <div class="card-name">Коктейльный стол+черный стрейч</div>
+          <div class="card-name">Коктейльный стол стрейч</div>
           <div class="card-price">1 300 <span>₽/день</span></div>
           <div class="card-buttons">
             <button class="btn-examples" onclick="openGallery(this)" type="button">
@@ -2620,9 +2539,7 @@
         </div>
 
         <div class="card-examples" hidden>
-          <img src="./images/examples/example-01.jpg" />
-          <img src="./images/examples/example-02.jpg" />
-          <img src="./images/examples/example-03.jpg" />
+          <img src="./images/examples/kokteylnyy-stol-01.jpg" />
         </div>
       </div>
       <div class="card" data-cat="Столы">
@@ -2653,7 +2570,7 @@
         </div>
       </div>
       <div class="card" data-cat="Столы">
-        <div class="card-img" onclick="openGallery(this)">
+        <div class="card-img">
           <img
             alt="Журнальный стол (белый)"
             loading="lazy"
@@ -2668,10 +2585,6 @@
             <button class="btn-more" onclick="openPopup(this)" type="button">
               + Размеры
             </button>
-
-            <button class="btn-examples" onclick="openGallery(this)" type="button">
-              ✦ Примеры
-            </button>
           </div>
         </div>
       
@@ -2681,12 +2594,6 @@
             <tr><td>Ш</td><td><strong>58 см</strong></td></tr>
             <tr><td>В</td><td><strong>43 см</strong></td></tr>
           </table>
-        </div>
-
-        <div class="card-examples" hidden>
-          <img src="./images/examples/example-01.jpg" />
-          <img src="./images/examples/example-02.jpg" />
-          <img src="./images/examples/example-03.jpg" />
         </div>
       </div>
 
@@ -2721,14 +2628,12 @@
         </div>
 
         <div class="card-examples" hidden>
-          <img src="./images/examples/example-01.jpg" />
-          <img src="./images/examples/example-02.jpg" />
-          <img src="./images/examples/example-03.jpg" />
+          <img src="./images/examples/eames-02.jpg" />
         </div>
       </div>
 
       <div class="card" data-cat="Столы">
-        <div class="card-img" onclick="openGallery(this)">
+        <div class="card-img">
           <img
             alt="Стол Eames квадратный (белый)"
             loading="lazy"
@@ -2743,10 +2648,6 @@
             <button class="btn-more" onclick="openPopup(this)" type="button">
               + Размеры
             </button>
-
-            <button class="btn-examples" onclick="openGallery(this)" type="button">
-              ✦ Примеры
-            </button>
           </div>
         </div>
       
@@ -2757,16 +2658,10 @@
             <tr><td>В</td><td><strong>75 см</strong></td></tr>
           </table>
         </div>
-
-        <div class="card-examples" hidden>
-          <img src="./images/examples/example-01.jpg" />
-          <img src="./images/examples/example-02.jpg" />
-          <img src="./images/examples/example-03.jpg" />
-        </div>
       </div>
 
       <div class="card" data-cat="Столы">
-        <div class="card-img" onclick="openGallery(this)">
+        <div class="card-img">
           <img
             alt="Стол Eames (стекло)"
             loading="lazy"
@@ -2781,10 +2676,6 @@
             <button class="btn-more" onclick="openPopup(this)" type="button">
               + Размеры
             </button>
-
-            <button class="btn-examples" onclick="openGallery(this)" type="button">
-              ✦ Примеры
-            </button>
           </div>
         </div>
       
@@ -2794,15 +2685,9 @@
             <tr><td>Д</td><td><strong>90 см</strong></td></tr>
           </table>
         </div>
-
-        <div class="card-examples" hidden>
-          <img src="./images/examples/example-01.jpg" />
-          <img src="./images/examples/example-02.jpg" />
-          <img src="./images/examples/example-03.jpg" />
-        </div>
       </div>
       <div class="card" data-cat="Столы">
-        <div class="card-img" onclick="openGallery(this)">
+        <div class="card-img">
           <img
             alt="Стол Gladom журнальный (зеленый)"
             loading="lazy"
@@ -2817,10 +2702,6 @@
             <button class="btn-more" onclick="openPopup(this)" type="button">
               + Размеры
             </button>
-
-            <button class="btn-examples" onclick="openGallery(this)" type="button">
-              ✦ Примеры
-            </button>
           </div>
         </div>
       
@@ -2830,15 +2711,9 @@
             <tr><td>В</td><td><strong>53 см</strong></td></tr>
           </table>
         </div>
-
-        <div class="card-examples" hidden>
-          <img src="./images/examples/example-01.jpg" />
-          <img src="./images/examples/example-02.jpg" />
-          <img src="./images/examples/example-03.jpg" />
-        </div>
       </div>
       <div class="card" data-cat="Столы">
-        <div class="card-img" onclick="openGallery(this)">
+        <div class="card-img">
           <img
             alt="Стол Gladom журнальный (белый)"
             loading="lazy"
@@ -2853,10 +2728,6 @@
             <button class="btn-more" onclick="openPopup(this)" type="button">
               + Размеры
             </button>
-
-            <button class="btn-examples" onclick="openGallery(this)" type="button">
-              ✦ Примеры
-            </button>
           </div>
         </div>
       
@@ -2866,15 +2737,9 @@
             <tr><td>В</td><td><strong>53 см</strong></td></tr>
           </table>
         </div>
-
-        <div class="card-examples" hidden>
-          <img src="./images/examples/example-01.jpg" />
-          <img src="./images/examples/example-02.jpg" />
-          <img src="./images/examples/example-03.jpg" />
-        </div>
       </div>
       <div class="card" data-cat="Столы">
-        <div class="card-img" onclick="openGallery(this)">
+        <div class="card-img">
           <img
             alt="Стол Gladom журнальный (черный)"
             loading="lazy"
@@ -2889,10 +2754,6 @@
             <button class="btn-more" onclick="openPopup(this)" type="button">
               + Размеры
             </button>
-
-            <button class="btn-examples" onclick="openGallery(this)" type="button">
-              ✦ Примеры
-            </button>
           </div>
         </div>
       
@@ -2901,12 +2762,6 @@
             <tr><td>Ш</td><td><strong>45 см</strong></td></tr>
             <tr><td>В</td><td><strong>53 см</strong></td></tr>
           </table>
-        </div>
-
-        <div class="card-examples" hidden>
-          <img src="./images/examples/example-01.jpg" />
-          <img src="./images/examples/example-02.jpg" />
-          <img src="./images/examples/example-03.jpg" />
         </div>
       </div>
       <div class="card" data-cat="Столы">
@@ -2932,12 +2787,11 @@
 
         <div class="card-examples" hidden>
           <img src="./images/examples/komplekt-stolov-01.png" />
-          <img src="./images/examples/example-02.jpg" />
-          <img src="./images/examples/example-03.jpg" />
+          <img src="./images/examples/komplekt-stolov-02.jpg" />
         </div>
       </div>
       <div class="card" data-cat="Столы">
-        <div class="card-img" onclick="openGallery(this)">
+        <div class="card-img">
           <img
             alt="Стол складной (серый)"
             loading="lazy"
@@ -2952,10 +2806,6 @@
             <button class="btn-more" onclick="openPopup(this)" type="button">
               + Размеры
             </button>
-
-            <button class="btn-examples" onclick="openGallery(this)" type="button">
-              ✦ Примеры
-            </button>
           </div>
         </div>
       
@@ -2966,15 +2816,9 @@
             <tr><td>В</td><td><strong>74 см</strong></td></tr>
           </table>
         </div>
-
-        <div class="card-examples" hidden>
-          <img src="./images/examples/example-01.jpg" />
-          <img src="./images/examples/example-02.jpg" />
-          <img src="./images/examples/example-03.jpg" />
-        </div>
       </div>
       <div class="card" data-cat="Столы">
-        <div class="card-img" onclick="openGallery(this)">
+        <div class="card-img">
           <img
             alt="Стол складной (белый)"
             loading="lazy"
@@ -2989,10 +2833,6 @@
             <button class="btn-more" onclick="openPopup(this)" type="button">
               + Размеры
             </button>
-
-            <button class="btn-examples" onclick="openGallery(this)" type="button">
-              ✦ Примеры
-            </button>
           </div>
         </div>
       
@@ -3003,15 +2843,9 @@
             <tr><td>В</td><td><strong>74 см</strong></td></tr>
           </table>
         </div>
-
-        <div class="card-examples" hidden>
-          <img src="./images/examples/example-01.jpg" />
-          <img src="./images/examples/example-02.jpg" />
-          <img src="./images/examples/example-03.jpg" />
-        </div>
       </div>
       <div class="card" data-cat="Столы">
-        <div class="card-img" onclick="openGallery(this)">
+        <div class="card-img">
           <img
             alt="Чехол стрейч на прямоугольный стол 183 x 75, см (черный)"
             loading="lazy"
@@ -3028,10 +2862,6 @@
             <button class="btn-more" onclick="openPopup(this)" type="button">
               + Размеры
             </button>
-
-            <button class="btn-examples" onclick="openGallery(this)" type="button">
-              ✦ Примеры
-            </button>
           </div>
         </div>
       
@@ -3041,15 +2871,9 @@
             <tr><td>В</td><td><strong>75 см</strong></td></tr>
           </table>
         </div>
-
-        <div class="card-examples" hidden>
-          <img src="./images/examples/example-01.jpg" />
-          <img src="./images/examples/example-02.jpg" />
-          <img src="./images/examples/example-03.jpg" />
-        </div>
       </div>
       <div class="card" data-cat="Столы">
-        <div class="card-img" onclick="openGallery(this)">
+        <div class="card-img">
           <img
             alt="Стол барный высокий"
             loading="lazy"
@@ -3060,16 +2884,43 @@
           <div class="card-cat">🪞 Столы</div>
           <div class="card-name">Стол барный высокий</div>
           <div class="card-price">2 000 <span>₽/день</span></div>
+        </div>
+      </div>
+      <div class="card" data-cat="Столы">
+        <div class="card-img" onclick="openGallery(this)">
+          <img
+            alt="Журнальный столик Gabi"
+            loading="lazy"
+            src="./images/lounge/zurnalnyy-stolik-gabi.webp"
+          />
+        </div>
+        <div class="card-body">
+          <div class="card-cat">🪞 Столы</div>
+          <div class="card-name">Журнальный столик Gabi</div>
+          <div class="card-price">1 100 <span>₽/день</span></div>
           <div class="card-buttons">
+            <button class="btn-more" onclick="openPopup(this)" type="button">
+              + Размеры
+            </button>
+
             <button class="btn-examples" onclick="openGallery(this)" type="button">
               ✦ Примеры
             </button>
           </div>
         </div>
+      
+        <div class="card-extra-info" hidden>
+          <table>
+            <tr><td>Д</td><td><strong>80 см</strong></td></tr>
+          </table>
+        </div>
+
         <div class="card-examples" hidden>
-          <img src="./images/examples/example-01.jpg" />
-          <img src="./images/examples/example-02.jpg" />
-          <img src="./images/examples/example-03.jpg" />
+          <img src="./images/examples/divan-kreslo-rakushka-chernyy-01.jpg" />
+          <img src="./images/examples/gabi-01.jpg" />
+          <img src="./images/examples/divan-kreslo-rakushka-01.jpg" />
+          <img src="./images/examples/zurnalnyy-stolik-01.jpg" />
+          <img src="./images/examples/gabi-03.jpg" />
         </div>
       </div>
       <div class="card" data-cat="Мебель_для_деловых_мероприятий">
@@ -3157,9 +3008,10 @@
         </div>
 
         <div class="card-examples" hidden>
-          <img src="./images/examples/example-01.jpg" />
-          <img src="./images/examples/example-02.jpg" />
-          <img src="./images/examples/example-03.jpg" />
+          <img src="./images/examples/apollo-05.jpg" />
+          <img src="./images/examples/apollo-01.jpg" />
+          <img src="./images/examples/apollo-02.jpg" />
+          <img src="./images/examples/apollo-03.jpg" />
         </div>
       </div>
       <div class="card" data-cat="Мебель_для_деловых_мероприятий">
@@ -3194,13 +3046,14 @@
         </div>
 
         <div class="card-examples" hidden>
-          <img src="./images/examples/example-01.jpg" />
-          <img src="./images/examples/example-02.jpg" />
-          <img src="./images/examples/example-03.jpg" />
+          <img src="./images/examples/apollo-05.jpg" />
+          <img src="./images/examples/apollo-04.jpg" />
+          <img src="./images/examples/apollo-01.jpg" />
+          <img src="./images/examples/apollo-03.jpg" />
         </div>
       </div>
       <div class="card" data-cat="Мебель_для_деловых_мероприятий">
-        <div class="card-img" onclick="openGallery(this)">
+        <div class="card-img">
           <img
             alt="Тумба в президиум"
             loading="lazy"
@@ -3215,10 +3068,6 @@
             <button class="btn-more" onclick="openPopup(this)" type="button">
               + Размеры
             </button>
-
-            <button class="btn-examples" onclick="openGallery(this)" type="button">
-              ✦ Примеры
-            </button>
           </div>
         </div>
       
@@ -3229,15 +3078,9 @@
             <tr><td>В</td><td><strong>60 см</strong></td></tr>
           </table>
         </div>
-
-        <div class="card-examples" hidden>
-          <img src="./images/examples/example-01.jpg" />
-          <img src="./images/examples/example-02.jpg" />
-          <img src="./images/examples/example-03.jpg" />
-        </div>
       </div>
       <div class="card" data-cat="Мебель_для_деловых_мероприятий">
-        <div class="card-img" onclick="openGallery(this)">
+        <div class="card-img">
           <img
             alt="Тумба цилиндр белый (под брендирование)"
             loading="lazy"
@@ -3252,10 +3095,6 @@
             <button class="btn-more" onclick="openPopup(this)" type="button">
               + Размеры
             </button>
-
-            <button class="btn-examples" onclick="openGallery(this)" type="button">
-              ✦ Примеры
-            </button>
           </div>
         </div>
       
@@ -3265,15 +3104,9 @@
             <tr><td>В</td><td><strong>500 см</strong></td></tr>
           </table>
         </div>
-
-        <div class="card-examples" hidden>
-          <img src="./images/examples/example-01.jpg" />
-          <img src="./images/examples/example-02.jpg" />
-          <img src="./images/examples/example-03.jpg" />
-        </div>
       </div>
       <div class="card" data-cat="Мебель_для_деловых_мероприятий">
-        <div class="card-img" onclick="openGallery(this)">
+        <div class="card-img">
           <img
             alt="Тумба цилиндр белый низкая (под брендирование)"
             loading="lazy"
@@ -3288,10 +3121,6 @@
             <button class="btn-more" onclick="openPopup(this)" type="button">
               + Размеры
             </button>
-
-            <button class="btn-examples" onclick="openGallery(this)" type="button">
-              ✦ Примеры
-            </button>
           </div>
         </div>
       
@@ -3300,12 +3129,6 @@
             <tr><td>Ш</td><td><strong>750 см</strong></td></tr>
             <tr><td>В</td><td><strong>50 см</strong></td></tr>
           </table>
-        </div>
-
-        <div class="card-examples" hidden>
-          <img src="./images/examples/example-01.jpg" />
-          <img src="./images/examples/example-02.jpg" />
-          <img src="./images/examples/example-03.jpg" />
         </div>
       </div>
       <div class="card" data-cat="Мебель_для_деловых_мероприятий">
@@ -3328,9 +3151,10 @@
         </div>
 
         <div class="card-examples" hidden>
-          <img src="./images/examples/example-01.jpg" />
-          <img src="./images/examples/example-02.jpg" />
-          <img src="./images/examples/example-03.jpg" />
+          <img src="./images/examples/tribuna-dlya-spikera-01.jpg" />
+          <img src="./images/examples/tribuna-dlya-spikera-02.jpg" />
+          <img src="./images/examples/tribuna-dlya-spikera-03.jpg" />
+          <img src="./images/examples/tribuna-dlya-spikera-04.jpg" />
         </div>
       </div>
       <div class="card" data-cat="Мебель_для_деловых_мероприятий">
@@ -3403,11 +3227,12 @@
         </div>
 
         <div class="card-examples" hidden>
+          <img src="./images/examples/gabi-01.jpg" />
           <img src="./images/delovyh/stoyka-resepshn-5.webp" /> 
         </div>
       </div>
       <div class="card" data-cat="Мебель_для_деловых_мероприятий">
-        <div class="card-img" onclick="openGallery(this)">
+        <div class="card-img">
           <img
             alt="Стол-парта (белый)"
             loading="lazy"
@@ -3422,10 +3247,6 @@
             <button class="btn-more" onclick="openPopup(this)" type="button">
               + Размеры
             </button>
-
-            <button class="btn-examples" onclick="openGallery(this)" type="button">
-              ✦ Примеры
-            </button>
           </div>
         </div>
       
@@ -3435,12 +3256,6 @@
             <tr><td>Ш</td><td><strong>70 см</strong></td></tr>
             <tr><td>В</td><td><strong>75 см</strong></td></tr>
           </table>
-        </div>
-
-        <div class="card-examples" hidden>
-          <img src="./images/examples/example-01.jpg" />
-          <img src="./images/examples/example-02.jpg" />
-          <img src="./images/examples/example-03.jpg" />
         </div>
       </div>
       <div class="card" data-cat="Мебель_для_деловых_мероприятий">
@@ -3459,10 +3274,6 @@
             <button class="btn-more" onclick="openPopup(this)" type="button">
               + Размеры
             </button>
-
-            <button class="btn-examples" onclick="openGallery(this)" type="button">
-              ✦ Примеры
-            </button>
           </div>
         </div>
       
@@ -3472,12 +3283,6 @@
             <tr><td>Ш</td><td><strong>45 см</strong></td></tr>
             <tr><td>В</td><td><strong>75 см</strong></td></tr>
           </table>
-        </div>
-
-        <div class="card-examples" hidden>
-          <img src="./images/examples/example-01.jpg" />
-          <img src="./images/examples/example-02.jpg" />
-          <img src="./images/examples/example-03.jpg" />
         </div>
       </div>
       <div class="card" data-cat="Мебель_для_деловых_мероприятий">
@@ -3512,9 +3317,8 @@
         </div>
 
         <div class="card-examples" hidden>
-          <img src="./images/examples/example-01.jpg" />
-          <img src="./images/examples/example-02.jpg" />
-          <img src="./images/examples/example-03.jpg" />
+          <img src="./images/examples/stol-parta-svetlyy-01.jpg" />
+          <img src="./images/examples/stol-parta-svetlyy-02.jpg" />
         </div>
       </div>
       <div class="card" data-cat="Мебель_для_деловых_мероприятий">
@@ -3533,10 +3337,6 @@
             <button class="btn-more" onclick="openPopup(this)" type="button">
               + Размеры
             </button>
-
-            <button class="btn-examples" onclick="openGallery(this)" type="button">
-              ✦ Примеры
-            </button>
           </div>
         </div>
       
@@ -3547,15 +3347,9 @@
             <tr><td>В</td><td><strong>75 см</strong></td></tr>
           </table>
         </div>
-
-        <div class="card-examples" hidden>
-          <img src="./images/examples/example-01.jpg" />
-          <img src="./images/examples/example-02.jpg" />
-          <img src="./images/examples/example-03.jpg" />
-        </div>
       </div>
       <div class="card" data-cat="Мебель_для_деловых_мероприятий">
-        <div class="card-img" onclick="openGallery(this)">
+        <div class="card-img">
           <img
             alt="Трибуна (дерево)"
             loading="lazy"
@@ -3566,21 +3360,10 @@
           <div class="card-cat">🏢 Мебель для деловых мероприятий</div>
           <div class="card-name">Трибуна (дерево)</div>
           <div class="card-price">1 500 <span>₽/день</span></div>
-          <div class="card-buttons">
-            <button class="btn-examples" onclick="openGallery(this)" type="button">
-              ✦ Примеры
-            </button>
-          </div>
-        </div>
-
-        <div class="card-examples" hidden>
-          <img src="./images/examples/example-01.jpg" />
-          <img src="./images/examples/example-02.jpg" />
-          <img src="./images/examples/example-03.jpg" />
         </div>
       </div>
       <div class="card" data-cat="Мебель_для_деловых_мероприятий">
-        <div class="card-img" onclick="openGallery(this)">
+        <div class="card-img">
           <img
             alt="Трибуна (черная)"
             loading="lazy"
@@ -3591,21 +3374,10 @@
           <div class="card-cat">🏢 Мебель для деловых мероприятий</div>
           <div class="card-name">Трибуна (черная)</div>
           <div class="card-price">2 500 <span>₽/день</span></div>
-          <div class="card-buttons">
-            <button class="btn-examples" onclick="openGallery(this)" type="button">
-              ✦ Примеры
-            </button>
-          </div>
-        </div>
-
-        <div class="card-examples" hidden>
-          <img src="./images/examples/example-01.jpg" />
-          <img src="./images/examples/example-02.jpg" />
-          <img src="./images/examples/example-03.jpg" />
         </div>
       </div>
       <div class="card" data-cat="Мебель_для_деловых_мероприятий">
-        <div class="card-img" onclick="openGallery(this)">
+        <div class="card-img">
           <img
             alt="Напольная вешалка для одежды"
             loading="lazy"
@@ -3616,21 +3388,10 @@
           <div class="card-cat">🏢 Мебель для деловых мероприятий</div>
           <div class="card-name">Напольная вешалка для одежды</div>
           <div class="card-price">1 500 <span>₽/день</span></div>
-          <div class="card-buttons">
-            <button class="btn-examples" onclick="openGallery(this)" type="button">
-              ✦ Примеры
-            </button>
-          </div>
-        </div>
-
-        <div class="card-examples" hidden>
-          <img src="./images/examples/example-01.jpg" />
-          <img src="./images/examples/example-02.jpg" />
-          <img src="./images/examples/example-03.jpg" />
         </div>
       </div>
       <div class="card" data-cat="Мебель_для_деловых_мероприятий">
-        <div class="card-img" onclick="openGallery(this)">
+        <div class="card-img">
           <img
             alt="Корзина для мусора 10 л (черный)"
             loading="lazy"
@@ -3641,21 +3402,10 @@
           <div class="card-cat">🏢 Мебель для деловых мероприятий</div>
           <div class="card-name">Корзина для мусора 10 л (черный)</div>
           <div class="card-price">120 <span>₽/день</span></div>
-          <div class="card-buttons">
-            <button class="btn-examples" onclick="openGallery(this)" type="button">
-              ✦ Примеры
-            </button>
-          </div>
-        </div>
-
-        <div class="card-examples" hidden>
-          <img src="./images/examples/example-01.jpg" />
-          <img src="./images/examples/example-02.jpg" />
-          <img src="./images/examples/example-03.jpg" />
         </div>
       </div>
       <div class="card" data-cat="Мебель_для_деловых_мероприятий">
-        <div class="card-img" onclick="openGallery(this)">
+        <div class="card-img">
           <img
             alt="Корзина для мусора 10 л (белый)"
             loading="lazy"
@@ -3666,21 +3416,10 @@
           <div class="card-cat">🏢 Мебель для деловых мероприятий</div>
           <div class="card-name">Корзина для мусора 10 л (белый)</div>
           <div class="card-price">120 <span>₽/день</span></div>
-          <div class="card-buttons">
-            <button class="btn-examples" onclick="openGallery(this)" type="button">
-              ✦ Примеры
-            </button>
-          </div>
-        </div>
-
-        <div class="card-examples" hidden>
-          <img src="./images/examples/example-01.jpg" />
-          <img src="./images/examples/example-02.jpg" />
-          <img src="./images/examples/example-03.jpg" />
         </div>
       </div>
       <div class="card" data-cat="Мебель_для_деловых_мероприятий">
-        <div class="card-img" onclick="openGallery(this)">
+        <div class="card-img">
           <img
             alt="Буклетница сетка А4"
             loading="lazy"
@@ -3691,17 +3430,6 @@
           <div class="card-cat">🏢 Мебель для деловых мероприятий</div>
           <div class="card-name">Буклетница сетка А4</div>
           <div class="card-price">600 <span>₽/день</span></div>
-          <div class="card-buttons">
-            <button class="btn-examples" onclick="openGallery(this)" type="button">
-              ✦ Примеры
-            </button>
-          </div>
-        </div>
-
-        <div class="card-examples" hidden>
-          <img src="./images/examples/example-01.jpg" />
-          <img src="./images/examples/example-02.jpg" />
-          <img src="./images/examples/example-03.jpg" />
         </div>
       </div>
       <div class="card" data-cat="Мебель_для_деловых_мероприятий">
@@ -3760,8 +3488,6 @@
 
         <div class="card-examples" hidden>
           <img src="./images/examples/stol-konferents-01.jpg" />
-          <img src="./images/examples/example-02.jpg" />
-          <img src="./images/examples/example-03.jpg" />
         </div>
       </div>
       
@@ -3818,13 +3544,12 @@
         </div>
 
         <div class="card-examples" hidden>
-          <img src="./images/examples/example-01.jpg" />
-          <img src="./images/examples/example-02.jpg" />
-          <img src="./images/examples/example-03.jpg" />
+          <img src="./images/examples/stul-barnyy-b-01.jpg" />
+          <img src="./images/examples/stul-barnyy-b-02.jpg" />
         </div>
       </div>
             <div class="card" data-cat="Бары_и_стеллажи">
-        <div class="card-img" onclick="openGallery(this)">
+        <div class="card-img">
           <img
             alt="Стул барный дерево"
             loading="lazy"
@@ -3835,21 +3560,10 @@
           <div class="card-cat">🍸 Бары и стеллажи</div>
           <div class="card-name">Стул барный</div>
           <div class="card-price">900 <span>₽/день</span></div>
-          <div class="card-buttons">
-            <button class="btn-examples" onclick="openGallery(this)" type="button">
-              ✦ Примеры
-            </button>
-          </div>
-        </div>
-
-        <div class="card-examples" hidden>
-          <img src="./images/examples/example-01.jpg" />
-          <img src="./images/examples/example-02.jpg" />
-          <img src="./images/examples/example-03.jpg" />
         </div>
       </div>
       <div class="card" data-cat="Бары_и_стеллажи">
-        <div class="card-img" onclick="openGallery(this)">
+        <div class="card-img">
           <img
             alt="Стул Черний"
             loading="lazy"
@@ -3861,21 +3575,10 @@
           <div class="card-cat">🍸 Бары и стеллажи</div>
           <div class="card-name">Стул барный</div>
           <div class="card-price">900 <span>₽/день</span></div>
-          <div class="card-buttons">
-            <button class="btn-examples" onclick="openGallery(this)" type="button">
-              ✦ Примеры
-            </button>
-          </div>
-        </div>
-
-        <div class="card-examples" hidden>
-          <img src="./images/examples/example-01.jpg" />
-          <img src="./images/examples/example-02.jpg" />
-          <img src="./images/examples/example-03.jpg" />
         </div>
       </div>
       <div class="card" data-cat="Бары_и_стеллажи">
-        <div class="card-img" onclick="openGallery(this)">
+        <div class="card-img">
           <img
             alt="Барный стул Velex (черный)"
             loading="lazy"
@@ -3886,21 +3589,10 @@
           <div class="card-cat">🍸 Бары и стеллажи</div>
           <div class="card-name">Барный стул Velex (черный)</div>
           <div class="card-price">1 000 <span>₽/день</span></div>
-          <div class="card-buttons">
-            <button class="btn-examples" onclick="openGallery(this)" type="button">
-              ✦ Примеры
-            </button>
-          </div>
-        </div>
-
-        <div class="card-examples" hidden>
-          <img src="./images/examples/example-01.jpg" />
-          <img src="./images/examples/example-02.jpg" />
-          <img src="./images/examples/example-03.jpg" />
         </div>
       </div>
       <div class="card" data-cat="Бары_и_стеллажи">
-        <div class="card-img" onclick="openGallery(this)">
+        <div class="card-img">
           <img
             alt="Барный стул Velex (бордовый)"
             loading="lazy"
@@ -3911,17 +3603,6 @@
           <div class="card-cat">🍸 Бары и стеллажи</div>
           <div class="card-name">Барный стул Velex (бордовый)</div>
           <div class="card-price">1 000 <span>₽/день</span></div>
-          <div class="card-buttons">
-            <button class="btn-examples" onclick="openGallery(this)" type="button">
-              ✦ Примеры
-            </button>
-          </div>
-        </div>
-
-        <div class="card-examples" hidden>
-          <img src="./images/examples/example-01.jpg" />
-          <img src="./images/examples/example-02.jpg" />
-          <img src="./images/examples/example-03.jpg" />
         </div>
       </div>
       <div class="card" data-cat="Бары_и_стеллажи">
@@ -3936,17 +3617,6 @@
           <div class="card-cat">🍸 Бары и стеллажи</div>
           <div class="card-name">Стул барный деревянный</div>
           <div class="card-price">600 <span>₽/день</span></div>
-          <div class="card-buttons">
-            <button class="btn-examples" onclick="openGallery(this)" type="button">
-              ✦ Примеры
-            </button>
-          </div>
-        </div>
-
-        <div class="card-examples" hidden>
-          <img src="./images/examples/example-01.jpg" />
-          <img src="./images/examples/example-02.jpg" />
-          <img src="./images/examples/example-03.jpg" />
         </div>
       </div>
       <div class="card" data-cat="Бары_и_стеллажи">
@@ -3981,13 +3651,11 @@
         </div>
 
         <div class="card-examples" hidden>
-          <img src="./images/examples/example-01.jpg" />
-          <img src="./images/examples/example-02.jpg" />
-          <img src="./images/examples/example-03.jpg" />
+          <img src="./images/examples/barnyy-stol-01.jpg" />
         </div>
       </div>
       <div class="card" data-cat="Бары_и_стеллажи">
-        <div class="card-img" onclick="openGallery(this)">
+        <div class="card-img">
           <img
             alt="Стул барный Белая экокожа"
             loading="lazy"
@@ -3998,21 +3666,10 @@
           <div class="card-cat">🍸 Бары и стеллажи</div>
           <div class="card-name">Стул барный Белая экокожа</div>
           <div class="card-price">600 <span>₽/день</span></div>
-          <div class="card-buttons">
-            <button class="btn-examples" onclick="openGallery(this)" type="button">
-              ✦ Примеры
-            </button>
-          </div>
-        </div>
-
-        <div class="card-examples" hidden>
-          <img src="./images/examples/example-01.jpg" />
-          <img src="./images/examples/example-02.jpg" />
-          <img src="./images/examples/example-03.jpg" />
         </div>
       </div>
       <div class="card" data-cat="Бары_и_стеллажи">
-        <div class="card-img" onclick="openGallery(this)">
+        <div class="card-img">
           <img
             alt="Барный стул Boston"
             loading="lazy"
@@ -4027,10 +3684,6 @@
             <button class="btn-more" onclick="openPopup(this)" type="button">
               + Размеры
             </button>
-
-            <button class="btn-examples" onclick="openGallery(this)" type="button">
-              ✦ Примеры
-            </button>
           </div>
         </div>
       
@@ -4040,12 +3693,6 @@
             <tr><td>В</td><td><strong>91 см</strong></td></tr>
             <tr><td>Г</td><td><strong>56 см</strong></td></tr>
           </table>
-        </div>
-
-        <div class="card-examples" hidden>
-          <img src="./images/examples/example-01.jpg" />
-          <img src="./images/examples/example-02.jpg" />
-          <img src="./images/examples/example-03.jpg" />
         </div>
       </div>
       <div class="card" data-cat="Бары_и_стеллажи">
@@ -4118,9 +3765,8 @@
         </div>
 
         <div class="card-examples" hidden>
-          <img src="./images/examples/example-01.jpg" />
-          <img src="./images/examples/example-02.jpg" />
-          <img src="./images/examples/example-03.jpg" />
+          <img src="./images/examples/stoyka-derevo-01.jpg" />
+          <img src="./images/examples/stoyka-derevo-02.jpg" />
         </div>
       </div>
       <div class="card" data-cat="Бары_и_стеллажи">
@@ -4155,9 +3801,8 @@
         </div>
 
         <div class="card-examples" hidden>
-          <img src="./images/examples/example-01.jpg" />
-          <img src="./images/examples/example-02.jpg" />
-          <img src="./images/examples/example-03.jpg" />
+          <img src="./images/examples/stoyka-zhelezo-01.jpg" />
+          <img src="./images/examples/stoyka-zhelezo-02.jpg" />
         </div>
       </div>
       <div class="card" data-cat="Бары_и_стеллажи">
@@ -4264,7 +3909,7 @@
         </div>
       </div>
             <div class="card" data-cat="Бары_и_стеллажи">
-        <div class="card-img" onclick="openGallery(this)">
+        <div class="card-img">
           <img
             alt="Стол барный высокий"
             loading="lazy"
@@ -4275,17 +3920,6 @@
           <div class="card-cat">🍸 Бары и стеллажи</div>
           <div class="card-name">Стол барный высокий</div>
           <div class="card-price">2 000 <span>₽/день</span></div>
-          <div class="card-buttons">
-            <button class="btn-examples" onclick="openGallery(this)" type="button">
-              ✦ Примеры
-            </button>
-          </div>
-        </div>
-
-        <div class="card-examples" hidden>
-          <img src="./images/examples/example-01.jpg" />
-          <img src="./images/examples/example-02.jpg" />
-          <img src="./images/examples/example-03.jpg" />
         </div>
       </div>
       <div class="card" data-cat="Бары_и_стеллажи">
@@ -4324,32 +3958,7 @@
           <img src="./images/examples/stol-kokteylnyy-03.jpg" />
         </div>
       </div>
-      <div class="card" data-cat="Бары_и_стеллажи">
-        <div class="card-img" onclick="openGallery(this)">
-          <img
-            alt="Стол коктейльный (белый/золото,чернильный/серебро)"
-            loading="lazy"
-            src="./images/stol/stol-kokteylnyy-belyy-zoloto.webp"
-          />
-        </div>
-        <div class="card-body">
-          <div class="card-cat">🍸 Бары и стеллажи</div>
-          <div class="card-name">Стол коктейльный (белый/золото,чернильный/серебро)</div>
-          <div class="card-price">1 900 <span>₽/день</span></div>
-          <div class="card-buttons">
 
-            <button class="btn-examples" onclick="openGallery(this)" type="button">
-              ✦ Примеры
-            </button>
-          </div>
-        </div>
-
-        <div class="card-examples" hidden>
-          <img src="./images/examples/example-01.jpg" />
-          <img src="./images/examples/example-02.jpg" />
-          <img src="./images/stol/stol-kokteylnyy-chernyy-serebro.webp" />
-        </div>
-      </div>
       <div class="card" data-cat="Бары_и_стеллажи">
         <div class="card-img" onclick="openGallery(this)">
           <img
@@ -4370,9 +3979,11 @@
         </div>
 
         <div class="card-examples" hidden>
-          <img src="./images/examples/stol-kokteylnyy-01.jpg" />
-          <img src="./images/examples/stol-kokteylnyy-02.jpg" />
-          <img src="./images/examples/stol-kokteylnyy-03.jpg" />
+          <img src="./images/examples/stol-kokteylnyy-chernyy-01.jpg" />
+          <img src="./images/examples/stol-kokteylnyy-chernyy-02.jpg" />
+          <img src="./images/examples/stol-kokteylnyy-chernyy-03.jpg" />
+          <img src="./images/examples/stol-kokteylnyy-chernyy-04.jpg" />
+          <img src="./images/stol/stol-kokteylnyy-belyy-zoloto.webp" />
         </div>
       </div>
       <div class="card" data-cat="Бары_и_стеллажи">
@@ -4385,7 +3996,7 @@
         </div>
         <div class="card-body">
           <div class="card-cat">🍸 Бары и стеллажи</div>
-          <div class="card-name">Коктейльный стол+черный стрейч</div>
+          <div class="card-name">Коктейльный стол стрейч</div>
           <div class="card-price">1 300 <span>₽/день</span></div>
           <div class="card-buttons">
             <button class="btn-examples" onclick="openGallery(this)" type="button">
@@ -4395,13 +4006,11 @@
         </div>
 
         <div class="card-examples" hidden>
-          <img src="./images/examples/example-01.jpg" />
-          <img src="./images/examples/example-02.jpg" />
-          <img src="./images/examples/example-03.jpg" />
+          <img src="./images/examples/kokteylnyy-stol-01.jpg" />
         </div>
       </div>
       <div class="card" data-cat="Бары_и_стеллажи">
-        <div class="card-img" onclick="openGallery(this)">
+        <div class="card-img">
           <img
             alt="Стол из бочек"
             loading="lazy"
@@ -4416,10 +4025,6 @@
             <button class="btn-more" onclick="openPopup(this)" type="button">
               + Размеры
             </button>
-
-            <button class="btn-examples" onclick="openGallery(this)" type="button">
-              ✦ Примеры
-            </button>
           </div>
         </div>
       
@@ -4429,12 +4034,6 @@
             <tr><td>Ш</td><td><strong>60 см</strong></td></tr>
             <tr><td>В</td><td><strong>90 см</strong></td></tr>
           </table>
-        </div>
-
-        <div class="card-examples" hidden>
-          <img src="./images/examples/example-01.jpg" />
-          <img src="./images/examples/example-02.jpg" />
-          <img src="./images/examples/example-03.jpg" />
         </div>
       </div>
       <div class="card" data-cat="Бары_и_стеллажи">
@@ -4541,10 +4140,11 @@
         </div>
         <div class="card-examples" hidden>
           <img src="./images/examples/stellazh-01.jpg" />
+          <img src="./images/examples/stellazh-svetloe-derevo-01.jpg" />
         </div>
       </div>
       <div class="card" data-cat="Бары_и_стеллажи">
-        <div class="card-img" onclick="openGallery(this)">
+        <div class="card-img">
           <img
             alt="Стеллаж"
             loading="lazy"
@@ -4559,10 +4159,6 @@
             <button class="btn-more" onclick="openPopup(this)" type="button">
               + Размеры
             </button>
-
-            <button class="btn-examples" onclick="openGallery(this)" type="button">
-              ✦ Примеры
-            </button>
           </div>
         </div>
       
@@ -4572,12 +4168,6 @@
             <tr><td>Ш</td><td><strong>40 см</strong></td></tr>
             <tr><td>В</td><td><strong>200 см</strong></td></tr>
           </table>
-        </div>
-
-        <div class="card-examples" hidden>
-          <img src="./images/examples/example-01.jpg" />
-          <img src="./images/examples/example-02.jpg" />
-          <img src="./images/examples/example-03.jpg" />
         </div>
       </div>
       <div class="card" data-cat="Дополнительное_оборудование">
@@ -4600,13 +4190,11 @@
         </div>
 
         <div class="card-examples" hidden>
-          <img src="./images/examples/example-01.jpg" />
-          <img src="./images/examples/example-02.jpg" />
-          <img src="./images/examples/example-03.jpg" />
+          <img src="./images/examples/palma-01.jpg" />
         </div>
       </div>
       <div class="card" data-cat="Дополнительное_оборудование">
-        <div class="card-img" onclick="openGallery(this)">
+        <div class="card-img">
           <img
             alt="Искусственное дерево"
             loading="lazy"
@@ -4617,17 +4205,6 @@
           <div class="card-cat">🔧 Дополнительное оборудование</div>
           <div class="card-name">Искусственное дерево</div>
           <div class="card-price">1 500 <span>₽/день</span></div>
-          <div class="card-buttons">
-            <button class="btn-examples" onclick="openGallery(this)" type="button">
-              ✦ Примеры
-            </button>
-          </div>
-        </div>
-
-        <div class="card-examples" hidden>
-          <img src="./images/examples/example-01.jpg" />
-          <img src="./images/examples/example-02.jpg" />
-          <img src="./images/examples/example-03.jpg" />
         </div>
       </div>
       <div class="card" data-cat="Дополнительное_оборудование">
@@ -4662,13 +4239,11 @@
         </div>
 
         <div class="card-examples" hidden>
-          <img src="./images/examples/example-01.jpg" />
-          <img src="./images/examples/example-02.jpg" />
-          <img src="./images/examples/example-03.jpg" />
+          <img src="./images/examples/puf-pletennyy-01.jpg" />
         </div>
       </div>
       <div class="card" data-cat="Дополнительное_оборудование">
-        <div class="card-img" onclick="openGallery(this)">
+        <div class="card-img">
           <img
             alt="Кулер"
             loading="lazy"
@@ -4683,10 +4258,6 @@
             <button class="btn-more" onclick="openPopup(this)" type="button">
               + Размеры
             </button>
-
-            <button class="btn-examples" onclick="openGallery(this)" type="button">
-              ✦ Примеры
-            </button>
           </div>
         </div>
       
@@ -4696,12 +4267,6 @@
             <tr><td>Ш</td><td><strong>31 см</strong></td></tr>
             <tr><td>В</td><td><strong>96 см</strong></td></tr>
           </table>
-        </div>
-
-        <div class="card-examples" hidden>
-          <img src="./images/examples/example-01.jpg" />
-          <img src="./images/examples/example-02.jpg" />
-          <img src="./images/examples/example-03.jpg" />
         </div>
       </div>
       <div class="card" data-cat="Дополнительное_оборудование">
@@ -4719,7 +4284,7 @@
         </div>
       </div>
       <div class="card" data-cat="Дополнительное_оборудование">
-        <div class="card-img" onclick="openGallery(this)">
+        <div class="card-img">
           <img
             alt="Рейл"
             loading="lazy"
@@ -4730,21 +4295,10 @@
           <div class="card-cat">🔧 Дополнительное оборудование</div>
           <div class="card-name">10 плечиков Рейл для одежды 120 см</div>
           <div class="card-price">700 <span>₽/день</span></div>
-          <div class="card-buttons">
-            <button class="btn-examples" onclick="openGallery(this)" type="button">
-              ✦ Примеры
-            </button>
-          </div>
-        </div>
-
-        <div class="card-examples" hidden>
-          <img src="./images/examples/example-01.jpg" />
-          <img src="./images/examples/example-02.jpg" />
-          <img src="./images/examples/example-03.jpg" />
         </div>
       </div>
       <div class="card" data-cat="Дополнительное_оборудование">
-        <div class="card-img" onclick="openGallery(this)">
+        <div class="card-img">
           <img
             alt="Зеркало"
             loading="lazy"
@@ -4759,10 +4313,6 @@
             <button class="btn-more" onclick="openPopup(this)" type="button">
               + Размеры
             </button>
-
-            <button class="btn-examples" onclick="openGallery(this)" type="button">
-              ✦ Примеры
-            </button>
           </div>
         </div>
       
@@ -4772,15 +4322,9 @@
             <tr><td>В</td><td><strong>150 см</strong></td></tr>
           </table>
         </div>
-
-        <div class="card-examples" hidden>
-          <img src="./images/examples/example-01.jpg" />
-          <img src="./images/examples/example-02.jpg" />
-          <img src="./images/examples/example-03.jpg" />
-        </div>
       </div>
       <div class="card" data-cat="Дополнительное_оборудование">
-        <div class="card-img" onclick="openGallery(this)">
+        <div class="card-img">
           <img
             alt="gladilnaya"
             loading="lazy"
@@ -4791,17 +4335,6 @@
           <div class="card-cat">🔧 Дополнительное оборудование</div>
           <div class="card-name">Гладильная доска</div>
           <div class="card-price">850 <span>₽/день</span></div>
-          <div class="card-buttons">
-            <button class="btn-examples" onclick="openGallery(this)" type="button">
-              ✦ Примеры
-            </button>
-          </div>
-        </div>
-
-        <div class="card-examples" hidden>
-          <img src="./images/examples/example-01.jpg" />
-          <img src="./images/examples/example-02.jpg" />
-          <img src="./images/examples/example-03.jpg" />
         </div>
       </div>
       <div class="card" data-cat="Дополнительное_оборудование">
@@ -4860,9 +4393,8 @@
         </div>
 
         <div class="card-examples" hidden>
-          <img src="./images/examples/example-01.jpg" />
-          <img src="./images/examples/example-02.jpg" />
-          <img src="./images/examples/example-03.jpg" />
+          <img src="./images/examples/svetilnik-01.jpg" />
+          <img src="./images/examples/svetilnik-02.jpg" />
         </div>
       </div>
       <div class="card" data-cat="Дополнительное_оборудование">
@@ -4904,7 +4436,7 @@
         </div>
       </div>
       <div class="card" data-cat="Дополнительное_оборудование">
-        <div class="card-img" onclick="openGallery(this)">
+        <div class="card-img">
           <img
             alt="LED свечи"
             loading="lazy"
@@ -4915,21 +4447,10 @@
           <div class="card-cat">🔧 Дополнительное оборудование</div>
           <div class="card-name">LED свечи - набор из 3 шт без батереек</div>
           <div class="card-price">350 <span>₽/день</span></div>
-          <div class="card-buttons">
-            <button class="btn-examples" onclick="openGallery(this)" type="button">
-              ✦ Примеры
-            </button>
-          </div>
-        </div>
-
-        <div class="card-examples" hidden>
-          <img src="./images/examples/example-01.jpg" />
-          <img src="./images/examples/example-02.jpg" />
-          <img src="./images/examples/example-03.jpg" />
         </div>
       </div>
       <div class="card" data-cat="Дополнительное_оборудование">
-        <div class="card-img" onclick="openGallery(this)">
+        <div class="card-img">
           <img
             alt="Флипчарт"
             loading="lazy"
@@ -4944,10 +4465,6 @@
             <button class="btn-more" onclick="openPopup(this)" type="button">
               + Размеры
             </button>
-
-            <button class="btn-examples" onclick="openGallery(this)" type="button">
-              ✦ Примеры
-            </button>
           </div>
         </div>
       
@@ -4956,12 +4473,6 @@
             <tr><td>Ш</td><td><strong>70 см</strong></td></tr>
             <tr><td>Д</td><td><strong>170 см</strong></td></tr>
           </table>
-        </div>
-
-        <div class="card-examples" hidden>
-          <img src="./images/examples/example-01.jpg" />
-          <img src="./images/examples/example-02.jpg" />
-          <img src="./images/examples/example-03.jpg" />
         </div>
       </div>
       <div class="card" data-cat="Фотозона">
@@ -5006,7 +4517,7 @@
         </div>
       </div>
       <div class="card" data-cat="Фотозона">
-        <div class="card-img" onclick="openGallery(this)">
+        <div class="card-img">
           <img
             alt="kolonna"
             loading="lazy"
@@ -5021,10 +4532,6 @@
             <button class="btn-more" onclick="openPopup(this)" type="button">
               + Размеры
             </button>
-
-            <button class="btn-examples" onclick="openGallery(this)" type="button">
-              ✦ Примеры
-            </button>
           </div>
         </div>
       
@@ -5034,12 +4541,6 @@
             <tr><td>Ш</td><td><strong>35 см</strong></td></tr>
             <tr><td>В</td><td><strong>35 см</strong></td></tr>
           </table>
-        </div>
-
-        <div class="card-examples" hidden>
-          <img src="./images/examples/example-01.jpg" />
-          <img src="./images/examples/example-02.jpg" />
-          <img src="./images/examples/example-03.jpg" />
         </div>
       </div>
       
@@ -5075,9 +4576,7 @@
         </div>
 
         <div class="card-examples" hidden>
-          <img src="./images/examples/example-01.jpg" />
-          <img src="./images/examples/example-02.jpg" />
-          <img src="./images/examples/example-03.jpg" />
+          <img src="./images/examples/divan-kreslo-rakushka-01.jpg" />
         </div>
       </div>
       <div class="card" data-cat="Lounge">
@@ -5112,9 +4611,7 @@
         </div>
 
         <div class="card-examples" hidden>
-          <img src="./images/examples/example-01.jpg" />
-          <img src="./images/examples/example-02.jpg" />
-          <img src="./images/examples/example-03.jpg" />
+          <img src="./images/examples/divan-kreslo-rakushka-chernyy-01.jpg" />
         </div>
       </div>
       <div class="card" data-cat="Lounge">
@@ -5148,9 +4645,7 @@
         </div>
 
         <div class="card-examples" hidden>
-          <img src="./images/examples/example-01.jpg" />
-          <img src="./images/examples/example-02.jpg" />
-          <img src="./images/examples/example-03.jpg" />
+          <img src="./images/examples/divan-kreslo-rakushka-chernyy-01.jpg" />>
         </div>
       </div>
 
@@ -5188,9 +4683,8 @@
         </div>
 
         <div class="card-examples" hidden>
-          <img src="./images/examples/example-01.jpg" />
-          <img src="./images/examples/example-02.jpg" />
-          <img src="./images/examples/example-03.jpg" />
+          <img src="./images/examples/zurnalnyy-stolik-01.jpg" />
+          <img src="./images/examples/gabi-03.jpg" />
         </div>
       </div>
 
@@ -5228,9 +4722,9 @@
         </div>
 
         <div class="card-examples" hidden>
-          <img src="./images/examples/example-01.jpg" />
-          <img src="./images/examples/example-02.jpg" />
-          <img src="./images/examples/example-03.jpg" />
+          <img src="./images/examples/zurnalnyy-stolik-01.jpg" />
+          <img src="./images/examples/gabi-04.jpg" />
+          <img src="./images/examples/gabi-03.jpg" />
         </div>
       </div>
 
@@ -5268,14 +4762,12 @@
         </div>
 
         <div class="card-examples" hidden>
-          <img src="./images/examples/example-01.jpg" />
-          <img src="./images/examples/example-02.jpg" />
-          <img src="./images/examples/example-03.jpg" />
+          <img src="./images/examples/komplekt-stolov-02.jpg" />
         </div>
       </div>
 
       <div class="card" data-cat="Lounge">
-        <div class="card-img" onclick="openGallery(this)">
+        <div class="card-img">
           <img
             alt="Кресло Gabi синее"
             loading="lazy"
@@ -5292,10 +4784,6 @@
             <button class="btn-more" onclick="openPopup(this)" type="button">
               + Размеры
             </button>
-
-            <button class="btn-examples" onclick="openGallery(this)" type="button">
-              ✦ Примеры
-            </button>
           </div>
         </div>
       
@@ -5305,12 +4793,6 @@
             <tr><td>Ш</td><td><strong>70 см</strong></td></tr>
             <tr><td>В</td><td><strong>45 см</strong></td></tr>
           </table>
-        </div>
-
-        <div class="card-examples" hidden>
-          <img src="./images/examples/example-01.jpg" />
-          <img src="./images/examples/example-02.jpg" />
-          <img src="./images/examples/example-03.jpg" />
         </div>
       </div>
 
@@ -5349,8 +4831,6 @@
 
         <div class="card-examples" hidden>
           <img src="./images/examples/kreslo-gabi-golubo-seryy-01.jpg" />
-          <img src="./images/examples/kreslo-gabi-golubo-seryy-02.jpg" />
-          <img src="./images/examples/kreslo-gabi-golubo-seryy-03.jpg" />
         </div>
       </div>
 
@@ -5428,9 +4908,8 @@
         </div>
 
         <div class="card-examples" hidden>
-          <img src="./images/examples/example-01.jpg" />
-          <img src="./images/examples/example-02.jpg" />
-          <img src="./images/examples/example-03.jpg" />
+          <img src="./images/examples/gabi-01.jpg" />
+          <img src="./images/examples/gabi-02.jpg" />
         </div>
       </div>
 
@@ -5469,6 +4948,8 @@
           <img src="./images/examples/kreslo-gabi-b-02.jpg" />
           <img src="./images/examples/kreslo-gabi-b-03.jpg" />
           <img src="./images/examples/kreslo-gabi-b-04.jpg" />
+          <img src="./images/examples/gabi-01.jpg" />
+          <img src="./images/examples/gabi-02.jpg" />
         </div>
       </div>
 
@@ -5507,8 +4988,7 @@
 
         <div class="card-examples" hidden>
           <img src="./images/examples/divan-gabi-goluboy-01.webp" />
-          <img src="./images/examples/kreslo-gabi-goluboe-02.jpg" />
-          <img src="./images/examples/kreslo-gabi-goluboe-03.jpg" />
+          <img src="./images/examples/komplekt-stolov-03.png" />
         </div>
       </div>
 
@@ -5547,8 +5027,7 @@
 
         <div class="card-examples" hidden>
           <img src="./images/examples/kreslo-gabi-goluboe-01.jpg" />
-          <img src="./images/examples/kreslo-gabi-goluboe-02.jpg" />
-          <img src="./images/examples/kreslo-gabi-goluboe-03.jpg" />
+          <img src="./images/examples/komplekt-stolov-03.png" />
         </div>
       </div>
 
@@ -5587,8 +5066,7 @@
 
         <div class="card-examples" hidden>
           <img src="./images/examples/divan-gabi-zheltyy-01.webp" />
-          <img src="./images/examples/example-02.jpg" />
-          <img src="./images/examples/example-03.jpg" />
+          <img src="./images/examples/divan-gabi-zheltyy-02.jpg" />
         </div>
       </div>
 
@@ -5641,9 +5119,7 @@
         </div>
 
         <div class="card-examples" hidden>
-          <img src="./images/examples/example-01.jpg" />
-          <img src="./images/examples/example-02.jpg" />
-          <img src="./images/examples/example-03.jpg" />
+          <img src="./images/examples/kreslo-molochnoe-01.jpg" />
         </div>
       </div>
       <div class="card" data-cat="Lounge">
@@ -5666,9 +5142,7 @@
         </div>
 
         <div class="card-examples" hidden>
-          <img src="./images/examples/example-01.jpg" />
-          <img src="./images/examples/example-02.jpg" />
-          <img src="./images/examples/example-03.jpg" />
+          <img src="./images/examples/kreslo-molochnoe-01.jpg" />
         </div>
       </div>
       <div class="card" data-cat="Lounge">
@@ -5738,9 +5212,10 @@
         </div>
 
         <div class="card-examples" hidden>
-          <img src="./images/examples/example-01.jpg" />
-          <img src="./images/examples/example-02.jpg" />
-          <img src="./images/examples/example-03.jpg" />
+          <img src="./images/examples/divan-kreslo-rakushka-chernyy-01.jpg" />
+          <img src="./images/examples/gabi-01.jpg" />
+          <img src="./images/examples/divan-kreslo-rakushka-01.jpg" />
+          <img src="./images/examples/zurnalnyy-stolik-01.jpg" />
         </div>
       </div>
 
@@ -5778,14 +5253,14 @@
         </div>
 
         <div class="card-examples" hidden>
-          <img src="./images/examples/example-01.jpg" />
-          <img src="./images/examples/example-02.jpg" />
-          <img src="./images/examples/example-03.jpg" />
+          <img src="./images/examples/zurnalnyy-stolik-01.jpg" />
+          <img src="./images/examples/gabi-03.jpg" />
+          <img src="./images/examples/gabi-04.jpg" />
         </div>
       </div>
 
       <div class="card" data-cat="Кресла">
-        <div class="card-img" onclick="openGallery(this)">
+        <div class="card-img">
           <img
             alt="Кресло Gabi синее"
             loading="lazy"
@@ -5802,10 +5277,6 @@
             <button class="btn-more" onclick="openPopup(this)" type="button">
               + Размеры
             </button>
-
-            <button class="btn-examples" onclick="openGallery(this)" type="button">
-              ✦ Примеры
-            </button>
           </div>
         </div>
       
@@ -5815,12 +5286,6 @@
             <tr><td>Ш</td><td><strong>70 см</strong></td></tr>
             <tr><td>В</td><td><strong>45 см</strong></td></tr>
           </table>
-        </div>
-
-        <div class="card-examples" hidden>
-          <img src="./images/examples/example-01.jpg" />
-          <img src="./images/examples/example-02.jpg" />
-          <img src="./images/examples/example-03.jpg" />
         </div>
       </div>
 
@@ -5899,6 +5364,8 @@
           <img src="./images/examples/kreslo-gabi-b-02.jpg" />
           <img src="./images/examples/kreslo-gabi-b-03.jpg" />
           <img src="./images/examples/kreslo-gabi-b-04.jpg" />
+          <img src="./images/examples/gabi-01.jpg" />
+          <img src="./images/examples/gabi-02.jpg" />
         </div>
       </div>
 
@@ -5937,8 +5404,7 @@
 
         <div class="card-examples" hidden>
           <img src="./images/examples/kreslo-gabi-goluboe-01.jpg" />
-          <img src="./images/examples/kreslo-gabi-goluboe-02.jpg" />
-          <img src="./images/examples/kreslo-gabi-goluboe-03.jpg" />
+          <img src="./images/examples/komplekt-stolov-03.png" />
         </div>
       </div>
 
@@ -6116,6 +5582,7 @@
           <img src="./images/examples/kreslo-mafiya-04.jpg" />
           <img src="./images/examples/kreslo-mafiya-05.jpg" />
           <img src="./images/examples/kreslo-mafiya-06.jpg" />
+          <img src="./images/examples/kreslo-mafiya-07.jpg" />
         </div>
       </div>
       <div class="card" data-cat="Кресла">
@@ -6187,9 +5654,10 @@
         </div>
 
         <div class="card-examples" hidden>
-          <img src="./images/examples/example-01.jpg" />
-          <img src="./images/examples/example-02.jpg" />
-          <img src="./images/examples/example-03.jpg" />
+          <img src="./images/examples/apollo-05.jpg" />
+          <img src="./images/examples/apollo-04.jpg" />
+          <img src="./images/examples/apollo-01.jpg" />
+          <img src="./images/examples/apollo-03.jpg" />
         </div>
       </div>
       <div class="card" data-cat="Кресла">
@@ -6313,9 +5781,7 @@
         </div>
 
         <div class="card-examples" hidden>
-          <img src="./images/examples/example-01.jpg" />
-          <img src="./images/examples/example-02.jpg" />
-          <img src="./images/examples/example-03.jpg" />
+          <img src="./images/examples/divan-kreslo-rakushka-chernyy-01.jpg" />
         </div>
       </div>
       <div class="card" data-cat="Кресла">
@@ -6338,9 +5804,7 @@
         </div>
 
         <div class="card-examples" hidden>
-          <img src="./images/examples/example-01.jpg" />
-          <img src="./images/examples/example-02.jpg" />
-          <img src="./images/examples/example-03.jpg" />
+          <img src="./images/examples/kreslo-molochnoe-01.jpg" />
         </div>
       </div>
       <div class="card" data-cat="Диваны">
@@ -6375,9 +5839,10 @@
         </div>
 
         <div class="card-examples" hidden>
-          <img src="./images/examples/example-01.jpg" />
-          <img src="./images/examples/example-02.jpg" />
-          <img src="./images/examples/example-03.jpg" />
+          <img src="./images/examples/apollo-05.jpg" />
+          <img src="./images/examples/apollo-01.jpg" />
+          <img src="./images/examples/apollo-02.jpg" />
+          <img src="./images/examples/apollo-03.jpg" />
         </div>
       </div>
       <div class="card" data-cat="Диваны">
@@ -6412,9 +5877,7 @@
         </div>
 
         <div class="card-examples" hidden>
-          <img src="./images/examples/example-01.jpg" />
-          <img src="./images/examples/example-02.jpg" />
-          <img src="./images/examples/example-03.jpg" />
+          <img src="./images/examples/divan-kreslo-rakushka-01.jpg" />
         </div>
       </div>
 
@@ -6450,9 +5913,7 @@
         </div>
 
         <div class="card-examples" hidden>
-          <img src="./images/examples/example-01.jpg" />
-          <img src="./images/examples/example-02.jpg" />
-          <img src="./images/examples/example-03.jpg" />
+          <img src="./images/examples/divan-kreslo-rakushka-chernyy-01.jpg" />
         </div>
       </div>
       <div class="card" data-cat="Диваны">
@@ -6489,9 +5950,8 @@
         </div>
 
         <div class="card-examples" hidden>
-          <img src="./images/examples/example-01.jpg" />
-          <img src="./images/examples/example-02.jpg" />
-          <img src="./images/examples/example-03.jpg" />
+          <img src="./images/examples/gabi-03.jpg" />
+          <img src="./images/examples/zurnalnyy-stolik-01.jpg" />
         </div>
       </div>
       <div class="card" data-cat="Диваны">
@@ -6528,9 +5988,7 @@
         </div>
 
         <div class="card-examples" hidden>
-          <img src="./images/examples/example-01.jpg" />
-          <img src="./images/examples/example-02.jpg" />
-          <img src="./images/examples/example-03.jpg" />
+          <img src="./images/examples/komplekt-stolov-02.jpg" />
         </div>
       </div>
       <div class="card" data-cat="Диваны">
@@ -6568,8 +6026,6 @@
 
         <div class="card-examples" hidden>
           <img src="./images/examples/kreslo-gabi-golubo-seryy-01.jpg" />
-          <img src="./images/examples/kreslo-gabi-golubo-seryy-02.jpg" />
-          <img src="./images/examples/kreslo-gabi-golubo-seryy-03.jpg" />
         </div>
       </div>
       <div class="card" data-cat="Диваны">
@@ -6606,9 +6062,8 @@
         </div>
 
         <div class="card-examples" hidden>
-          <img src="./images/examples/example-01.jpg" />
-          <img src="./images/examples/example-02.jpg" />
-          <img src="./images/examples/example-03.jpg" />
+          <img src="./images/examples/gabi-01.jpg" />
+          <img src="./images/examples/gabi-02.jpg" />
         </div>
       </div>
       <div class="card" data-cat="Диваны">
@@ -6646,8 +6101,7 @@
 
         <div class="card-examples" hidden>
           <img src="./images/examples/divan-gabi-goluboy-01.webp" />
-          <img src="./images/examples/kreslo-gabi-goluboe-02.jpg" />
-          <img src="./images/examples/kreslo-gabi-goluboe-03.jpg" />
+         <img src="./images/examples/komplekt-stolov-03.png" />
         </div>
       </div>
       <div class="card" data-cat="Диваны">
@@ -6685,8 +6139,7 @@
 
         <div class="card-examples" hidden>
           <img src="./images/examples/divan-gabi-zheltyy-01.webp" />
-          <img src="./images/examples/example-02.jpg" />
-          <img src="./images/examples/example-03.jpg" />
+          <img src="./images/examples/divan-gabi-zheltyy-02.jpg" />
         </div>
       </div>
       <div class="card" data-cat="Диваны">
@@ -6709,9 +6162,7 @@
         </div>
 
         <div class="card-examples" hidden>
-          <img src="./images/examples/example-01.jpg" />
-          <img src="./images/examples/example-02.jpg" />
-          <img src="./images/examples/example-03.jpg" />
+          <img src="./images/examples/kreslo-molochnoe-01.jpg" />
         </div>
       </div>
       <div class="card" data-cat="Диваны">
@@ -6735,8 +6186,8 @@
 
         <div class="card-examples" hidden>
           <img src="./images/examples/divan-palletnyy-chernyy-01.webp" />
-          <img src="./images/examples/example-02.jpg" />
-          <img src="./images/examples/example-03.jpg" />
+          <img src="./images/examples/divan-palletnyy-chernyy-02.jpg" />
+          <img src="./images/examples/divan-palletnyy-chernyy-03.jpg" />
         </div>
       </div>
       <div class="card" data-cat="Посуда">
@@ -6759,9 +6210,9 @@
         </div>
 
         <div class="card-examples" hidden>
-          <img src="./images/examples/example-01.jpg" />
-          <img src="./images/examples/example-02.jpg" />
-          <img src="./images/examples/example-03.jpg" />
+          <img src="./images/examples/posuda-08.jpg" />
+          <img src="./images/examples/posuda-10.jpg" />
+          <img src="./images/examples/posuda-02.jpg" />
         </div>
       </div>
       <div class="card" data-cat="Посуда">
@@ -6784,9 +6235,9 @@
         </div>
 
         <div class="card-examples" hidden>
-          <img src="./images/examples/example-01.jpg" />
-          <img src="./images/examples/example-02.jpg" />
-          <img src="./images/examples/example-03.jpg" />
+          <img src="./images/examples/posuda-08.jpg" />
+          <img src="./images/examples/posuda-10.jpg" />
+          <img src="./images/examples/posuda-02.jpg" />
         </div>
       </div>
       <div class="card" data-cat="Посуда">
@@ -6809,9 +6260,9 @@
         </div>
 
         <div class="card-examples" hidden>
-          <img src="./images/examples/example-01.jpg" />
-          <img src="./images/examples/example-02.jpg" />
-          <img src="./images/examples/example-03.jpg" />
+          <img src="./images/examples/posuda-08.jpg" />
+          <img src="./images/examples/posuda-10.jpg" />
+          <img src="./images/examples/posuda-02.jpg" />
         </div>
       </div>
       <div class="card" data-cat="Посуда">
@@ -6834,9 +6285,9 @@
         </div>
 
         <div class="card-examples" hidden>
-          <img src="./images/examples/example-01.jpg" />
-          <img src="./images/examples/example-02.jpg" />
-          <img src="./images/examples/example-03.jpg" />
+          <img src="./images/examples/posuda-08.jpg" />
+          <img src="./images/examples/posuda-10.jpg" />
+          <img src="./images/examples/posuda-02.jpg" />
         </div>
       </div>
       <div class="card" data-cat="Посуда">
@@ -6859,9 +6310,8 @@
         </div>
 
         <div class="card-examples" hidden>
-          <img src="./images/examples/example-01.jpg" />
-          <img src="./images/examples/example-02.jpg" />
-          <img src="./images/examples/example-03.jpg" />
+          <img src="./images/examples/stol-banketnyy-01.jpg" />
+          <img src="./images/examples/stol-banketnyy-02.jpg" />
         </div>
       </div>
       <div class="card" data-cat="Посуда">
@@ -6884,9 +6334,8 @@
         </div>
 
         <div class="card-examples" hidden>
-          <img src="./images/examples/example-01.jpg" />
-          <img src="./images/examples/example-02.jpg" />
-          <img src="./images/examples/example-03.jpg" />
+          <img src="./images/examples/stol-banketnyy-02.jpg" />
+          <img src="./images/examples/stol-banketnyy-01.jpg" />
         </div>
       </div>
       <div class="card" data-cat="Посуда">
@@ -6909,15 +6358,14 @@
         </div>
 
         <div class="card-examples" hidden>
-          <img src="./images/examples/example-01.jpg" />
-          <img src="./images/examples/example-02.jpg" />
-          <img src="./images/examples/example-03.jpg" />
+          <img src="./images/examples/stol-banketnyy-02.jpg" />
+          <img src="./images/examples/stol-banketnyy-01.jpg" />
         </div>
       </div>
       <div class="card" data-cat="Посуда">
         <div class="card-img" onclick="openGallery(this)">
           <img
-            alt="Бокал для шампанского с золотым кантом, 300 мл"
+            alt="Бокал для шампанского, вина с золотым кантом, 300 мл"
             loading="lazy"
             src="./images/posuda/bokal-prozrachnyy-zoloto.webp"
           />
@@ -6936,34 +6384,9 @@
         </div>
 
         <div class="card-examples" hidden>
-          <img src="./images/examples/example-01.jpg" />
-          <img src="./images/examples/example-02.jpg" />
-          <img src="./images/examples/example-03.jpg" />
-        </div>
-      </div>
-      <div class="card" data-cat="Посуда">
-        <div class="card-img" onclick="openGallery(this)">
-          <img
-            alt="Бокал для вина"
-            loading="lazy"
-            src="./images/posuda/bokal-prozrachnyy-zoloto.webp"
-          />
-        </div>
-        <div class="card-body">
-          <div class="card-cat">🍷 Посуда</div>
-          <div class="card-name">Бокал для вина</div>
-          <div class="card-price">110 <span>₽/день</span></div>
-          <div class="card-buttons">
-            <button class="btn-examples" onclick="openGallery(this)" type="button">
-              ✦ Примеры
-            </button>
-          </div>
-        </div>
-
-        <div class="card-examples" hidden>
-          <img src="./images/examples/example-01.jpg" />
-          <img src="./images/examples/example-02.jpg" />
-          <img src="./images/examples/example-03.jpg" />
+          <img src="./images/examples/posuda-08.jpg" />
+          <img src="./images/examples/posuda-10.jpg" />
+          <img src="./images/examples/posuda-02.jpg" />
         </div>
       </div>
       <div class="card" data-cat="Посуда">
@@ -6986,9 +6409,9 @@
         </div>
 
         <div class="card-examples" hidden>
-          <img src="./images/examples/example-01.jpg" />
-          <img src="./images/examples/example-02.jpg" />
-          <img src="./images/examples/example-03.jpg" />
+          <img src="./images/examples/posuda-08.jpg" />
+          <img src="./images/examples/posuda-10.jpg" />
+          <img src="./images/examples/posuda-02.jpg" />
         </div>
       </div>
       <div class="card" data-cat="Посуда">
@@ -7001,7 +6424,7 @@
         </div>
         <div class="card-body">
           <div class="card-cat">🍷 Посуда</div>
-          <div class="card-name">Бокал прозрачный ребристый под игристое</div>
+          <div class="card-name">Бокал прозрачный ребристый под вино, игристое</div>
           <div class="card-price">150 <span>₽/день</span></div>
           <div class="card-buttons">
             <button class="btn-examples" onclick="openGallery(this)" type="button">
@@ -7011,34 +6434,9 @@
         </div>
 
         <div class="card-examples" hidden>
-          <img src="./images/examples/example-01.jpg" />
-          <img src="./images/examples/example-02.jpg" />
-          <img src="./images/examples/example-03.jpg" />
-        </div>
-      </div>
-      <div class="card" data-cat="Посуда">
-        <div class="card-img" onclick="openGallery(this)">
-          <img
-            alt="Бокал прозрачный ребристый под вино"
-            loading="lazy"
-            src="./images/posuda/bokal-prozrachnyy.webp"
-          />
-        </div>
-        <div class="card-body">
-          <div class="card-cat">🍷 Посуда</div>
-          <div class="card-name">Бокал прозрачный ребристый под вино</div>
-          <div class="card-price">150 <span>₽/день</span></div>
-          <div class="card-buttons">
-            <button class="btn-examples" onclick="openGallery(this)" type="button">
-              ✦ Примеры
-            </button>
-          </div>
-        </div>
-
-        <div class="card-examples" hidden>
-          <img src="./images/examples/example-01.jpg" />
-          <img src="./images/examples/example-02.jpg" />
-          <img src="./images/examples/example-03.jpg" />
+          <img src="./images/examples/posuda-11.jpg" />
+          <img src="./images/examples/posuda-06.jpg" />
+          <img src="./images/examples/posuda-03.jpg" />
         </div>
       </div>
       <div class="card" data-cat="Посуда">
@@ -7061,9 +6459,10 @@
         </div>
 
         <div class="card-examples" hidden>
-          <img src="./images/examples/example-01.jpg" />
-          <img src="./images/examples/example-02.jpg" />
-          <img src="./images/examples/example-03.jpg" />
+          <img src="./images/examples/posuda-11.jpg" />
+          <img src="./images/examples/posuda-09.jpg" />
+          <img src="./images/examples/posuda-04.jpg" />
+          <img src="./images/examples/posuda-03.jpg" />
         </div>
       </div>
       <div class="card" data-cat="Посуда">
@@ -7086,9 +6485,11 @@
         </div>
 
         <div class="card-examples" hidden>
-          <img src="./images/examples/example-01.jpg" />
-          <img src="./images/examples/example-02.jpg" />
-          <img src="./images/examples/example-03.jpg" />
+          <img src="./images/examples/posuda-03.jpg" />
+          <img src="./images/examples/posuda-04.jpg" />
+          <img src="./images/examples/posuda-10.jpg" />
+          <img src="./images/examples/posuda-08.jpg" />
+          <img src="./images/examples/posuda-02.jpg" />
         </div>
       </div>
       <div class="card" data-cat="Посуда">
@@ -7111,9 +6512,9 @@
         </div>
 
         <div class="card-examples" hidden>
-          <img src="./images/examples/example-01.jpg" />
-          <img src="./images/examples/example-02.jpg" />
-          <img src="./images/examples/example-03.jpg" />
+          <img src="./images/examples/posuda-02.jpg" />
+          <img src="./images/examples/posuda-10.jpg" />
+          <img src="./images/examples/posuda-08.jpg" />
         </div>
       </div>
       <div class="card" data-cat="Посуда">
@@ -7136,9 +6537,9 @@
         </div>
 
         <div class="card-examples" hidden>
-          <img src="./images/examples/example-01.jpg" />
-          <img src="./images/examples/example-02.jpg" />
-          <img src="./images/examples/example-03.jpg" />
+          <img src="./images/examples/posuda-02.jpg" />
+          <img src="./images/examples/posuda-10.jpg" />
+          <img src="./images/examples/posuda-08.jpg" />
         </div>
       </div>
       <div class="card" data-cat="Пуфы_и_банкетки">
@@ -7161,9 +6562,14 @@
         </div>
 
         <div class="card-examples" hidden>
+          <img src="./images/examples/puf-chan-stolik.jpg" />
           <img src="./images/examples/puf-grusha-01.webp" />
-          <img src="./images/examples/example-02.jpg" />
-          <img src="./images/examples/example-03.jpg" />
+          <img src="./images/examples/puf-obogrevatel-stolik.jpg" />
+          <img src="./images/examples/puf-grusha-02.jpg" />
+          <img src="./images/examples/puf-grusha-03.webp" />
+          <img src="./images/examples/puf-grusha-04.webp" />
+          <img src="./images/examples/puf-grusha-05.webp" />
+          <img src="./images/examples/puf-grusha-06.webp" />
         </div>
       </div>
       <div class="card" data-cat="Пуфы_и_банкетки">
@@ -7199,9 +6605,10 @@
         </div>
 
         <div class="card-examples" hidden>
-          <img src="./images/examples/example-01.jpg" />
-          <img src="./images/examples/example-02.jpg" />
-          <img src="./images/examples/example-03.jpg" />
+          <img src="./images/examples/puf-04.jpg" />
+          <img src="./images/examples/puf-03.jpg" />
+          <img src="./images/examples/puf-02.jpg" />
+          <img src="./images/examples/puf-01.jpg" />
         </div>
       </div>
       <div class="card" data-cat="Пуфы_и_банкетки">
@@ -7237,9 +6644,9 @@
         </div>
 
         <div class="card-examples" hidden>
-          <img src="./images/examples/example-01.jpg" />
-          <img src="./images/examples/example-02.jpg" />
-          <img src="./images/examples/example-03.jpg" />
+          <img src="./images/examples/gabi-02.jpg" />
+          <img src="./images/examples/puf-05.jpg" />
+          <img src="./images/examples/puf-06.jpg" />
         </div>
       </div>
       <div class="card" data-cat="Пуфы_и_банкетки">
@@ -7297,14 +6704,12 @@
         </div>
 
         <div class="card-examples" hidden>
-          <img src="./images/examples/example-01.jpg" />
-          <img src="./images/examples/example-02.jpg" />
-          <img src="./images/examples/example-03.jpg" />
+          <img src="./images/examples/puf-obogrevatel-stolik.jpg" />
         </div>
       </div>
       
       <div class="card" data-cat="Тепловое_оборудование">
-        <div class="card-img" onclick="openGallery(this)">
+        <div class="card-img">
           <img
             alt="Обогреватель газовый «гриб»"
             loading="lazy"
@@ -7315,16 +6720,6 @@
           <div class="card-cat">🔥 Тепловое оборудование</div>
           <div class="card-name">Обогреватель газовый «гриб»</div>
           <div class="card-price">4 000 <span>₽/день</span></div>
-          <div class="card-buttons">
-            <button class="btn-examples" onclick="openGallery(this)" type="button">
-              ✦ Примеры
-            </button>
-          </div>
-        </div>
-        <div class="card-examples" hidden>
-          <img src="./images/examples/example-01.jpg" />
-          <img src="./images/examples/example-02.jpg" />
-          <img src="./images/examples/example-03.jpg" />
         </div>
       </div>
       <div class="card" data-cat="Тепловое_оборудование">
@@ -7347,13 +6742,12 @@
         </div>
 
         <div class="card-examples" hidden>
-          <img src="./images/examples/example-01.jpg" />
           <img src="./images/examples/chan-02.webp" />
-          <img src="./images/examples/example-03.jpg" />
+          <img src="./images/examples/puf-chan-stolik.jpg" />
         </div>
       </div>
       <div class="card" data-cat="Улица">
-        <div class="card-img" onclick="openGallery(this)">
+        <div class="card-img">
           <img
             alt="Плед"
             loading="lazy"
@@ -7368,10 +6762,6 @@
             <button class="btn-more" onclick="openPopup(this)" type="button">
               + Размеры
             </button>
-
-            <button class="btn-examples" onclick="openGallery(this)" type="button">
-              ✦ Примеры
-            </button>
           </div>
         </div>
       
@@ -7380,12 +6770,6 @@
             <tr><td>Д</td><td><strong>160 см</strong></td></tr>
             <tr><td>Ш</td><td><strong>120 см</strong></td></tr>
           </table>
-        </div>
-
-        <div class="card-examples" hidden>
-          <img src="./images/examples/example-01.jpg" />
-          <img src="./images/examples/example-02.jpg" />
-          <img src="./images/examples/example-03.jpg" />
         </div>
       </div>
       <div class="card" data-cat="Улица">
@@ -7420,8 +6804,6 @@
 
         <div class="card-examples" hidden>
           <img src="./images//ulitsa/podushka.webp" />
-          <img src="./images/examples/example-02.jpg" />
-          <img src="./images/examples/example-03.jpg" />
         </div>
       </div>
       <div class="card" data-cat="Улица">
@@ -7448,7 +6830,7 @@
       </div>
       
       <div class="card" data-cat="Улица">
-        <div class="card-img" onclick="openGallery(this)">
+        <div class="card-img">
           <img
             alt="Факел"
             loading="lazy"
@@ -7459,17 +6841,6 @@
           <div class="card-cat">☀️ Улица</div>
           <div class="card-name">Факел</div>
           <div class="card-price">300 <span>₽/день</span></div>
-          <div class="card-buttons">
-            <button class="btn-examples" onclick="openGallery(this)" type="button">
-              ✦ Примеры
-            </button>
-          </div>
-        </div>
-
-        <div class="card-examples" hidden>
-          <img src="./images/examples/example-01.jpg" />
-          <img src="./images/examples/example-02.jpg" />
-          <img src="./images/examples/example-03.jpg" />
         </div>
       </div>
       <div class="card" data-cat="Улица">
@@ -7530,6 +6901,7 @@
           <img src="./images/examples/shezlong-03.jpg" />
           <img src="./images/examples/shezlong-04.jpg" />
           <img src="./images/examples/shezlong-05.jpg" />
+          <img src="./images/examples/shezlong-06.jpg" />
         </div>
       </div>
       <div class="card" data-cat="Улица">
@@ -7569,16 +6941,17 @@
           <div class="card-name">Оградительный столбик (золото, серебро)</div>
           <div class="card-price">650 <span>₽/день</span></div>
           <div class="card-buttons">
-            <button class="btn-examples" onclick="openGallery(this)" type="button">
+            <button class="btn-examples" onclstolbik-ick="openGallery(this)" type="button">
               ✦ Примеры
             </button>
           </div>
         </div>
 
         <div class="card-examples" hidden>
-          <img src="./images/examples/example-01.jpg" />
-          <img src="./images/examples/example-02.jpg" />
-          <img src="./images/examples/example-03.jpg" />
+          <img src="./images/examples/stul-terye-04.jpg" />
+          <img src="./images/examples/stolbik-01.jpg" />
+          <img src="./images/examples/stolbik-serebro.webp" />
+          <img src="./images/examples/stolbik-03.jpg" />
         </div>
       </div>
       <div class="card" data-cat="Улица">
@@ -7601,9 +6974,8 @@
         </div>
 
         <div class="card-examples" hidden>
-          <img src="./images/examples/example-01.jpg" />
+          <img src="./images/examples/puf-chan-stolik.jpg" />
           <img src="./images/examples/chan-02.webp" />
-          <img src="./images/examples/example-03.jpg" />
         </div>
       </div>
       <div class="card" data-cat="Мебель_из_паллет">
@@ -7625,14 +6997,14 @@
           </div>
         </div>
 
-        <div class="card-examples" hidden>
+        <div class="card-examples" hidden>  
           <img src="./images/examples/divan-palletnyy-chernyy-01.webp" />
-          <img src="./images/examples/example-02.jpg" />
-          <img src="./images/examples/example-03.jpg" />
+          <img src="./images/examples/divan-palletnyy-chernyy-02.jpg" />
+          <img src="./images/examples/divan-palletnyy-chernyy-03.jpg" />
         </div>
       </div>
       <div class="card" data-cat="Мебель_из_паллет">
-        <div class="card-img" onclick="openGallery(this)">
+        <div class="card-img">
           <img
             alt="Оттоман из паллет"
             loading="lazy"
@@ -7645,21 +7017,10 @@
             Оттоман из паллет цвета натурального дерева (черный)
           </div>
           <div class="card-price">1 300 <span>₽/день</span></div>
-          <div class="card-buttons">
-            <button class="btn-examples" onclick="openGallery(this)" type="button">
-              ✦ Примеры
-            </button>
-          </div>
-        </div>
-
-        <div class="card-examples" hidden>
-          <img src="./images/examples/example-01.jpg" />
-          <img src="./images/examples/example-02.jpg" />
-          <img src="./images/examples/example-03.jpg" />
         </div>
       </div>
       <div class="card" data-cat="Мебель_из_паллет">
-        <div class="card-img" onclick="openGallery(this)">
+        <div class="card-img">
           <img
             alt="pallet-derevo"
             loading="lazy"
@@ -7670,17 +7031,6 @@
           <div class="card-cat">🪵 Мебель из паллет</div>
           <div class="card-name">Паллет цвета натурального дерева</div>
           <div class="card-price">500 <span>₽/день</span></div>
-          <div class="card-buttons">
-            <button class="btn-examples" onclick="openGallery(this)" type="button">
-              ✦ Примеры
-            </button>
-          </div>
-        </div>
-
-        <div class="card-examples" hidden>
-          <img src="./images/examples/example-01.jpg" />
-          <img src="./images/examples/example-02.jpg" />
-          <img src="./images/examples/example-03.jpg" />
         </div>
       </div>
       <a href="#header" class="back-to-top" aria-label="Back to top"></a>
@@ -7961,6 +7311,15 @@
           startX = null;
         }, { passive: true });
       })();
+
+      window.addEventListener('scroll', function () {
+        const btn = document.querySelector('.back-to-top');
+        if (window.scrollY > window.innerHeight * 2) {
+          btn.classList.add('visible');
+        } else {
+          btn.classList.remove('visible');
+        }
+      });
     </script>
 
     <a class="tg-float" href="https://t.me/nchernygina" target="_blank" rel="noopener" aria-label="Написати нам у Telegram">
