@@ -397,7 +397,6 @@
       }
 
       /* === POPUP STYLES === */
-      /* ЗМІНА: блок з даними товару — прихований в картці, дані читаються JS */
       .card-extra-info {
         display: none;
       }
@@ -411,7 +410,7 @@
         justify-content: center;
         z-index: 1000;
         padding: 1rem;
-        /* ЗМІНА: плавне відкриття/закриття */
+
         opacity: 0;
         visibility: hidden;
         transition: opacity 0.22s ease, visibility 0.22s ease;
@@ -420,7 +419,6 @@
         opacity: 1;
         visibility: visible;
       }
-      /* ЗМІНА: анімація popup-box при відкритті */
       .popup-box {
         transform: translateY(12px) scale(0.97);
         transition: transform 0.25s cubic-bezier(0.22, 1, 0.36, 1);
@@ -580,7 +578,6 @@
       }
 
       /* === EXAMPLES BUTTON === */
-      /* ЗМІНА: кнопка "Примеры" — окремий стиль, відрізняється від btn-more */
       .btn-examples {
         display: inline-flex;
         align-items: center;
@@ -603,7 +600,6 @@
       }
 
       /* === GALLERY POPUP === */
-      /* ЗМІНА: прихований блок з фото прикладів — зберігається в картці */
       .card-examples {
         display: none;
       }
@@ -7650,7 +7646,6 @@
     <script>
 
       function openPopup(btn) {
-        /* ЗМІНА: btn — це кнопка всередині картки; знаходимо батьківську .card */
         const card = btn.closest(".card");
 
         const name   = card.querySelector(".card-name").textContent.trim();
@@ -7658,7 +7653,6 @@
         const imgEl  = card.querySelector("img");
         const imgSrc = imgEl ? imgEl.src : "";
 
-        /* ЗМІНА: беремо рядки таблиці та нотатку з .card-extra-info */
         const extraInfo = card.querySelector(".card-extra-info");
         let rowsHTML = "";
         if (extraInfo) {
@@ -7719,12 +7713,10 @@
     </div>
 
     <script>
-      /* ЗМІНА: JS галереї — дані читаються з .card-examples всередині картки */
       var _galleryCurrent = 0;
       var _galleryTotal   = 0;
 
       function openGallery(btn) {
-        /* ЗМІНА: знаходимо батьківську картку і читаємо фото з .card-examples */
         var card = btn.closest(".card");
         var name = card.querySelector(".card-name").textContent.trim();
         var examplesBlock = card.querySelector(".card-examples");
@@ -7736,10 +7728,8 @@
         _galleryCurrent = 0;
         _galleryTotal   = imgs.length;
 
-        /* Заголовок */
         document.getElementById("galleryName").textContent = name;
 
-        /* Будуємо слайди */
         var track = document.getElementById("galleryTrack");
         track.innerHTML = "";
         imgs.forEach(function(img) {
@@ -7752,7 +7742,6 @@
           track.appendChild(slide);
         });
 
-        /* Точки */
         var dotsWrap = document.getElementById("galleryDots");
         dotsWrap.innerHTML = "";
         if (_galleryTotal > 1) {
@@ -7790,7 +7779,6 @@
         document.getElementById("galleryTrack").style.transform =
           "translateX(" + (-_galleryCurrent * 100) + "%)";
 
-        /* Стрілки */
         var prev = document.getElementById("galleryPrev");
         var next = document.getElementById("galleryNext");
         prev.classList.toggle("hidden", _galleryCurrent === 0);
@@ -7801,7 +7789,7 @@
           d.classList.toggle("active", i === _galleryCurrent);
         });
 
-        /* Лічильник */
+        /* счетчик */
         document.getElementById("galleryCounter").textContent =
           (_galleryTotal > 1) ? (_galleryCurrent + 1) + " / " + _galleryTotal : "";
       }
@@ -7831,7 +7819,7 @@
       });
     </script>
 
-    <a class="tg-float" href="https://t.me/arenda_mebeli_sochi_krasnodar" target="_blank" rel="noopener" aria-label="Написати нам у Telegram">
+    <a class="tg-float" href="https://t.me/olga_zhirova" target="_blank" rel="noopener" aria-label="Написать нам в Telegram">
       <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
         <circle cx="12" cy="12" r="12" fill="#c9a84c"/>
         <path d="M5.5 11.8 17 7l-1.8 9.5-3.5-2.4-1.7 1.6.3-3.3 5.2-4.8-6.5 4-3.5-1.2z" fill="#1a1a2e"/>
