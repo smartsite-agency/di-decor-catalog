@@ -18,13 +18,13 @@
         padding: 0;
       }
       :root {
-        --accent: #1a1a2e;
-        --gold: #c9a84c;
-        --gold-light: #e8eef5;
+        --accent: #1b2d5b;
+        --gold: #6b8cba;
+        --gold-light: #eef2f8;
         --text: #1a1a1a;
-        --muted: #888;
-        --border: #e8e4dc;
-        --bg: #faf9f6;
+        --muted: #8a96a8;
+        --border: #dce3ee;
+        --bg: #f7f8fc;
         --white: #ffffff;
         --card-radius: 14px;
       }
@@ -516,40 +516,41 @@
         font-style: italic;
       }
       .btn-more {
-        display: inline-flex;
-        align-items: center;
-        gap: 4px;
-        margin-top: 8px;
-        font-size: 11px;
-        padding: 4px 10px;
-        border-radius: 100px;
-        border: 0.5px solid rgba(0, 0, 0, 0.15);
-        background: transparent;
-        color: #888;
-        cursor: pointer;
-        font-family: inherit;
-        transition: all 0.15s;
-      }
-      .btn-more:hover {
-        background: #f0eff9;
-        border-color: #5f58ac;
-        color: #5f58ac;
-      }
-      .back-to-top {
-        position: fixed;
-        right: 13px;
-        bottom: 111px;
-        width: 46px;
-        height: 46px;
-        border-radius: 50%;
-        background: #484880;
-        text-decoration: none;
-        box-shadow: 0 6px 16px rgba(0,0,0,.25);
-        animation: btt-bounce 2.4s ease-in-out infinite;
-        opacity: 0;
-        visibility: hidden;
-        transition: background 0.2s, box-shadow 0.2s, opacity 0.3s, visibility 0.3s;
-      }
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  margin-top: 8px;
+  font-size: 11px;
+  padding: 4px 10px;
+  border-radius: 100px;
+  border: 0.5px solid rgba(0, 0, 0, 0.15);
+  background: transparent;
+  color: #888;
+  cursor: pointer;
+  font-family: inherit;
+  transition: all 0.15s;
+}
+.btn-more:hover {
+  background: var(--gold-light);
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.back-to-top {
+  position: fixed;
+  right: 13px;
+  bottom: 111px;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background: var(--accent);
+  text-decoration: none;
+  box-shadow: 0 6px 16px rgba(0,0,0,.25);
+  animation: btt-bounce 2.4s ease-in-out infinite;
+  opacity: 0;
+  visibility: hidden;
+  transition: background 0.2s, box-shadow 0.2s, opacity 0.3s, visibility 0.3s;
+}
       .back-to-top.visible {
         opacity: 1;
         visibility: visible;
@@ -765,7 +766,7 @@
       display: flex;
       align-items: center;
       gap: 10px;
-      background: #1a1a2e;
+      background: #1b2d5b;
       color: #fff;
       border-radius: 100px;
       padding: 8px 10px 8px 10px;
@@ -7822,7 +7823,7 @@
     <a class="tg-float" href="https://t.me/olga_zhirova" target="_blank" rel="noopener" aria-label="Написать нам в Telegram">
       <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
         <circle cx="12" cy="12" r="12" fill="#c9a84c"/>
-        <path d="M5.5 11.8 17 7l-1.8 9.5-3.5-2.4-1.7 1.6.3-3.3 5.2-4.8-6.5 4-3.5-1.2z" fill="#1a1a2e"/>
+        <path d="M5.5 11.8 17 7l-1.8 9.5-3.5-2.4-1.7 1.6.3-3.3 5.2-4.8-6.5 4-3.5-1.2z" fill="#1b2d5b"/>
       </svg>
       Написать нам
     </a>
